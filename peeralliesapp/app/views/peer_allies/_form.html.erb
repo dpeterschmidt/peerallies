@@ -1,0 +1,17 @@
+<%= form_for(@peer_ally) do |f| %>
+  <% if @peer_ally.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@peer_ally.errors.count, "error") %> prohibited this peer_ally from being saved:</h2>
+
+      <ul>
+      <% @peer_ally.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
