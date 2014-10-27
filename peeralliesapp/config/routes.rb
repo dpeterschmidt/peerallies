@@ -1,5 +1,7 @@
 Peeralliesapp::Application.routes.draw do
   resources :peer_allies
+  root to: 'peer_allies#index'
+  # match '/untitled' => 'peer_allies#untitled'
 
 
   # The priority is based upon order of creation:
