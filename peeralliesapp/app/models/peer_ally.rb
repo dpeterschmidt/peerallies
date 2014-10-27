@@ -1,3 +1,8 @@
 class PeerAlly < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :name, :grade
+
+  # def initialize(name, grade)
+  # 	@name = name
+  # 	@grade = grade
+  # end
 end
