@@ -1,8 +1,14 @@
 Peeralliesapp::Application.routes.draw do
+  # get "urls/new"
+
   resources :peer_allies
   root to: 'peer_allies#index'
-  # match '/untitled' => 'peer_allies#untitled'
 
+  resource :peer_allies do
+    get "ally_list"
+  end
+
+  # match :ally_list, :to => redirect('ally_list')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -2,11 +2,20 @@ class PeerAlliesController < ApplicationController
   # GET /peer_allies
   # GET /peer_allies.json
   def index
+
     @peer_allies = PeerAlly.all
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @peer_allies }
+    end
+    # redirect_to '/app/views/peer_allies/ally_list.html.erb'
+  end
+
+  def action
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @peer_ally }
     end
   end
 
@@ -18,6 +27,8 @@ class PeerAlliesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @peer_ally }
+
+
     end
   end
 
@@ -31,16 +42,6 @@ class PeerAlliesController < ApplicationController
       format.json { render json: @peer_ally }
     end
   end
-
-  # def untitled
-  #   @peer_ally = PeerAlly.untitled
-
-  #   respond_to do |format|
-  #     format.html # new.html.erb
-  #     format.json { render json: @peer_ally }
-  #   end
-  # end
-
 
   # GET /peer_allies/1/edit
   def edit
