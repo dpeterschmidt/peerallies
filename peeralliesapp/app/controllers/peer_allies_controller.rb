@@ -32,6 +32,16 @@ class PeerAlliesController < ApplicationController
     end
   end
 
+  # def untitled
+  #   @peer_ally = PeerAlly.untitled
+
+  #   respond_to do |format|
+  #     format.html # new.html.erb
+  #     format.json { render json: @peer_ally }
+  #   end
+  # end
+
+
   # GET /peer_allies/1/edit
   def edit
     @peer_ally = PeerAlly.find(params[:id])
@@ -80,4 +90,5 @@ class PeerAlliesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end
