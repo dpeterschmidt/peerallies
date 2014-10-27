@@ -5,7 +5,7 @@ gem 'rails', '3.2.18'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-
+gem 'sqlite3'
 
 ### From textbook (http://pastebin.com/WniRS74X) ###
 #For testing purposes
@@ -20,7 +20,6 @@ group :test, :development do
   gem 'guard-rspec'
   gem 'factory_girl_rails'
 
-  gem 'sqlite3'
 
 end
 
