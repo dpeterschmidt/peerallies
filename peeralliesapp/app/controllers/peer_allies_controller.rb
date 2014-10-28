@@ -2,7 +2,6 @@ class PeerAlliesController < ApplicationController
   # GET /peer_allies
   # GET /peer_allies.json
   def index
-
     @peer_allies = PeerAlly.all
 
     respond_to do |format|
@@ -12,7 +11,9 @@ class PeerAlliesController < ApplicationController
     # redirect_to '/app/views/peer_allies/ally_list.html.erb'
   end
 
-  def action
+  def ally_list
+    @peer_allies = PeerAlly.all
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @peer_ally }

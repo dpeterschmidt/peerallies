@@ -4,9 +4,8 @@ Peeralliesapp::Application.routes.draw do
   resources :peer_allies
   root to: 'peer_allies#index'
 
-  resource :peer_allies do
-    get "ally_list"
-  end
+  match :index, :to => 'peer_allies#index'
+  match :ally_list, :to => 'peer_allies#ally_list'
 
   # match :ally_list, :to => redirect('ally_list')
 
