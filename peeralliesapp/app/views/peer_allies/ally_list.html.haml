@@ -1,0 +1,26 @@
+%head
+  %title Test
+/ %link{:href => "styles/main.css", :rel => "stylesheet", :type => "text/css"}
+/ Latest compiled and minified CSS
+/ %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
+/ Optional theme
+/ %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css", :rel => "stylesheet"}
+%body
+  .container
+    %h1{:style => "text-align: center; font-size: 60px"} Peer Allies
+    %br
+      .media
+        %a.pull-left{:href => "ally.html"}
+          %img.media-object.img-circle{:alt => "daniel", :src => "daniel.jpg"}
+        .media-body
+          %h4.media-heading Daniel Peterschmidt
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .media
+        %a.pull-left{:href => "ally"}
+          %img.media-object.img-circle{:alt => "josh", :src => "josh.jpg"}
+        .media-body
+          %h4.media-heading Joshua Nance
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+= link_to 'Add new peer ally', new_peer_ally_path
+/ Latest compiled and minified JavaScript
+/%script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}

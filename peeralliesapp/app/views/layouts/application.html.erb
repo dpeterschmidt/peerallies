@@ -40,25 +40,6 @@
   </body>
 </html>
 
-<h1>Listing peer_allies</h1>
-
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @peer_allies.each do |peer_ally| %>
-  <tr>
-    <td><%= link_to 'Show', peer_ally %></td>
-    <td><%= link_to 'Edit', edit_peer_ally_path(peer_ally) %></td>
-    <td><%= link_to 'Destroy', peer_ally, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
 
 
 

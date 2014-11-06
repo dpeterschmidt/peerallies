@@ -1,4 +1,4 @@
-class PeerAlliesController < ApplicationController
+ class PeerAlliesController < ApplicationController
   # GET /peer_allies
   # GET /peer_allies.json
   def index
@@ -38,10 +38,10 @@ class PeerAlliesController < ApplicationController
   def new
     @peer_ally = PeerAlly.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @peer_ally }
-    end
+    # respond_to do |format|
+    #   format.html # new.html.erb
+    #   format.json { render json: @peer_ally }
+    # end
   end
 
   # GET /peer_allies/1/edit
