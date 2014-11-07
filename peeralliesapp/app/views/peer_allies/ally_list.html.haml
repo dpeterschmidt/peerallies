@@ -24,3 +24,15 @@
 = link_to 'Add new peer ally', new_peer_ally_path
 / Latest compiled and minified JavaScript
 /%script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
+
+
+// %table#movies
+//   %thead
+//     %th name
+//     %th gender
+//   %tbody
+//     - @peer_allies.each do |peer_ally|
+//       %tr
+//         %td= peer_ally.name 
+//         // %td= peer_ally.grade
+//         %td= link_to "More about #{peer_ally.name}", peer_ally_path(peer_ally)

@@ -4,20 +4,22 @@
   def index
     @peer_allies = PeerAlly.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @peer_allies }
-    end
+    # respond_to do |format|
+    #   format.html # index.html.erb
+    #   format.json { render json: @peer_allies }
+    # end
     # redirect_to '/app/views/peer_allies/ally_list.html.erb'
+  end
+  def name
   end
 
   def ally_list
     @peer_allies = PeerAlly.all
     
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @peer_ally }
-    end
+    # respond_to do |format|
+    #   format.html # show.html.erb
+    #   format.json { render json: @peer_ally }
+    # end
   end
 
   # GET /peer_allies/1
@@ -25,12 +27,12 @@
   def show
     @peer_ally = PeerAlly.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @peer_ally }
+    # respond_to do |format|
+    #   format.html # show.html.erb
+    #   format.json { render json: @peer_ally }
 
 
-    end
+    # end
   end
 
   # GET /peer_allies/new
