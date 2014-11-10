@@ -13,6 +13,8 @@ Peeralliesapp::Application.routes.draw do
 
   match :option, :to => 'peer_allies#option'
 
+  match :ally, :to => 'peer_allies#ally'
+
   # match :ally_list, :to => redirect('ally_list')
 
   # The priority is based upon order of creation:
