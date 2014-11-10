@@ -22,6 +22,11 @@
     # end
   end
 
+  def calendar
+    @peer_allies = PeerAlly.all
+
+  end
+
   # GET /peer_allies/1
   # GET /peer_allies/1.json
   def show

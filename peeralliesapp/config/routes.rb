@@ -7,6 +7,8 @@ Peeralliesapp::Application.routes.draw do
   match :index, :to => 'peer_allies#index'
   match :ally_list, :to => 'peer_allies#ally_list'
 
+  match :calendar, :to => 'peer_allies#calendar'
+
   # match :ally_list, :to => redirect('ally_list')
 
   # The priority is based upon order of creation:
