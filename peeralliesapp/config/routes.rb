@@ -11,7 +11,7 @@ Peeralliesapp::Application.routes.draw do
 
   match :crisis_info, :to => 'peer_allies#crisis_info'
 
- 
+  match :option, :to => 'peer_allies#option'
 
   # match :ally_list, :to => redirect('ally_list')
 
