@@ -10,8 +10,6 @@
     # end
     # redirect_to '/app/views/peer_allies/ally_list.html.erb'
   end
-  def name
-  end
 
   def ally_list
     @peer_allies = PeerAlly.all
@@ -93,6 +91,23 @@
       format.html { redirect_to peer_allies_url }
       format.json { head :no_content }
     end
+  end
+
+  def contact
+    # right now this just sends an email to a hardcoded email address
+    # which is actually the email I set up for this project: peeralliesups@gmail.com
+    # later functionality should include
+
+    # if you want to test the email functionality just change the hard-coded
+    # email address in app / mailers / ally_mailer.rb
+    # to an email you have access to
+    # at least until we get the form set up
+    AllyMailer.notification_email.deliver
+
+    # this is just so the route works for now
+    # this is a TEMPORARY SOLUTION as far as I know
+    redirect_to :index
+    
   end
 
 end
