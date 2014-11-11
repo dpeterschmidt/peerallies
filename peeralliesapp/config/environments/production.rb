@@ -1,4 +1,16 @@
 Peeralliesapp::Application.configure do
+
+  config.action_mailer.default_url_options = { :host => 'https://tranquil-cliffs-4819.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.mandrillapp.com",
+    :port => 587,
+    :user_name => "peeralliesups@gmail.com",
+    :password => "9_gEK4mX1D0rg_6iBcZWLA"
+  }
+
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
