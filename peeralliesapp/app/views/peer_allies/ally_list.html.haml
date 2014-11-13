@@ -1,41 +1,31 @@
-%head
-  %title Test
+%table#Allies
+  %thead
 / %link{:href => "styles/main.css", :rel => "stylesheet", :type => "text/css"}
 / Latest compiled and minified CSS
 / %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
 / Optional theme
 / %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css", :rel => "stylesheet"}
-%body
+%tbody
+- @peer_allies.each do |ally|
   .container
     %h1{:style => "text-align: center; font-size: 60px"} Peer Allies
     %br
       .media
         %a.pull-left{:href => "ally.html"}
-          %img.media-object.img-circle{:alt => "daniel", :src => "daniel.jpg"}
+          %img.media-object.img-circle{:alt => ally.name , :src => "daniel.jpg"}
         .media-body
           %h4.media-heading 
-          = link_to 'Daniel Peterschmidt', ally_path
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      .media
-        %a.pull-left{:href => "ally"}
-          %img.media-object.img-circle{:alt => "josh", :src => "josh.jpg"}
-        .media-body
-          %h4.media-heading Joshua Nance
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          = ally.bio
+          = link_to "Edit #{ally.name}'s profile", peer_ally_path(ally)
+          = image_tag(ally.avatar.url(:thumb))
+      // .media
+      //   %a.pull-left{:href => "ally"}
+      //     %img.media-object.img-circle{:alt => "josh", :src => "josh.jpg"}
+      //   .media-body
+      //     %h4.media-heading Joshua Nance
+      //     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 = link_to 'Add new peer ally', new_peer_ally_path
 
 
 / Latest compiled and minified JavaScript
 /%script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
-
-
-// %table#movies
-//   %thead
-//     %th name
-//     %th gender
-//   %tbody
-//     - @peer_allies.each do |peer_ally|
-//       %tr
-//         %td= peer_ally.name 
-//         // %td= peer_ally.grade
-//         %td= link_to "More about #{peer_ally.name}", peer_ally_path(peer_ally)

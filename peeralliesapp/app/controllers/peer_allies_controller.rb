@@ -41,8 +41,7 @@
   # GET /peer_allies/new
   # GET /peer_allies/new.json
   def new
-    @peer_ally = PeerAlly.new
-
+    # @peer_ally = PeerAlly.new
     # respond_to do |format|
     #   format.html # new.html.erb
     #   format.json { render json: @peer_ally }
@@ -57,7 +56,7 @@
   # POST /peer_allies
   # POST /peer_allies.json
   def create
-    @peer_ally = PeerAlly.new(params[:peer_ally])
+    @peer_ally = PeerAlly.create!(params[:peer_ally])
 
     respond_to do |format|
       if @peer_ally.save

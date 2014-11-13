@@ -16,6 +16,8 @@ Peeralliesapp::Application.routes.draw do
 
   match :ally, :to => 'peer_allies#ally'
 
+  post "/peer_allies/new" => 'peer_allies#create'
+
   # match :ally_list, :to => redirect('ally_list')
 
   # The priority is based upon order of creation:

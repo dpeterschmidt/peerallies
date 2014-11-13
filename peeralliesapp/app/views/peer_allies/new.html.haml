@@ -1,27 +1,16 @@
-%h1 Create A New Peer Ally
-= form_for :ally, url: peer_allies_path do |f|
-  %p
-    = f.label :name, 'Your Name'
-    %br
-      = f.text_field :bio
-  %p
-    = f.label :text
-    %br
-      = f.text_area :text
-  %p
-    = f.submit
+= stylesheet_link_tag "form"
 
+%h1 Create Your Peer Ally Profile
 
+= form_tag '/peer_allies' do 
+  
+  = label :peer_ally, :name, 'Name', :id => "name"
+  = text_field :peer_ally, :name, :id => "name"
 
+  = label :peer_ally, :bio, 'Biography'
+  = text_area :peer_ally, :bio
 
+  = label :peer_ally, :avatar, 'Avatar Photo'
+  = file_field :peer_ally, :avatar
 
-
-// = form_tag ally_path do
-
-//   = label :name, :name, 'Your Name'
-//   = text_field :name, 'your name'
-
-//   = label :name, :gender, 'Gender'
-//   = select :name, :gender, ['Male','Female']
-
-//   = submit_tag 'Save Changes'
+  = submit_tag 'Save Changes', :id => "submit"
