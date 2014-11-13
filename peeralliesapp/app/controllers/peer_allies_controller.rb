@@ -56,6 +56,7 @@
   # POST /peer_allies
   # POST /peer_allies.json
   def create
+    # puts "*****************************************************************************"+PeerAlly.find(params[:peer_ally])
     @peer_ally = PeerAlly.create!(params[:peer_ally])
 
     respond_to do |format|

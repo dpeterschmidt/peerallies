@@ -2,7 +2,7 @@
 
 %h1 Create Your Peer Ally Profile
 
-= form_tag '/peer_allies' do 
+= form_tag('/peer_allies', :multipart => true) do 
   
   = label :peer_ally, :name, 'Name', :id => "name"
   = text_field :peer_ally, :name, :id => "name"

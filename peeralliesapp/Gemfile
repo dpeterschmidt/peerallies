@@ -27,6 +27,7 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'factory_girl_rails'
+  gem  'table_print'
 end
 
 # Gems used only for assets and not required
@@ -45,6 +46,9 @@ end
 gem 'jquery-rails'
 gem 'haml'
 gem 'simple_form'
+gem "paperclip", "~> 4.2"
+
+
 
 
 # To use ActiveModel has_secure_password
