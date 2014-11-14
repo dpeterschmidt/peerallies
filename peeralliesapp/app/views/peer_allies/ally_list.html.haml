@@ -1,30 +1,31 @@
-%table#Allies
-  %thead
+%thead= stylesheet_link_tag "ally_list"
 / %link{:href => "styles/main.css", :rel => "stylesheet", :type => "text/css"}
 / Latest compiled and minified CSS
 / %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
 / Optional theme
 / %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css", :rel => "stylesheet"}
 %tbody
-- @peer_allies.each do |ally|
-  .container
-    %h1{:style => "text-align: center; font-size: 60px"} Peer Allies
+  %h1 Peer Allies
+  %list
+  -@peer_allies.each do |ally|
     %br
-      .media
-        %a.pull-left{:href => "ally.html"}
-          %img.media-object.img-circle{:alt => ally.name , :src => "daniel.jpg"}
-        .media-body
-          %h4.media-heading 
-          = ally.bio
-          = link_to "Edit #{ally.name}'s profile", peer_ally_path(ally)
-          = image_tag(ally.avatar.url(:thumb))
-      // .media
-      //   %a.pull-left{:href => "ally"}
-      //     %img.media-object.img-circle{:alt => "josh", :src => "josh.jpg"}
-      //   .media-body
-      //     %h4.media-heading Joshua Nance
-      //     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-= link_to 'Add new peer ally', new_peer_ally_path
+    %br
+      // %a.pull-left{:href => "ally.html"}
+      %img= image_tag(ally.avatar.url(:thumb))
+      //   %img.media-object.img-circle{:src => ally.avatar.url(:thumb)}
+      // .media-body
+      Name:
+      = link_to ally.name, peer_ally_path(ally)
+    
+    %br
+      Grade:
+      = ally.grade
+    %br 
+      Bio:
+      = ally.bio
+
+%br
+= link_to 'Add new peer ally', new_peer_ally_path, :id => 'footer'
 
 
 / Latest compiled and minified JavaScript
