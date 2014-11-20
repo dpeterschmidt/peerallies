@@ -1,10 +1,10 @@
-%thead= stylesheet_link_tag "ally_list"
+%head= stylesheet_link_tag "ally_list"
 / %link{:href => "styles/main.css", :rel => "stylesheet", :type => "text/css"}
 / Latest compiled and minified CSS
 / %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
 / Optional theme
 / %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css", :rel => "stylesheet"}
-%tbody
+%h4
   %h1 Peer Allies
   %list
   -@peer_allies.each do |ally|
@@ -14,18 +14,20 @@
       %img= image_tag(ally.avatar.url(:thumb))
       //   %img.media-object.img-circle{:src => ally.avatar.url(:thumb)}
       // .media-body
-      Name:
-      = link_to ally.name, peer_ally_path(ally)
-    
+      %name
+        Name:
+        = link_to ally.name, peer_ally_path(ally)
     %br
-      Grade:
-      = ally.grade
+      %grade
+        Grade:
+        = ally.grade
     %br 
       Bio:
       = ally.bio
 
-%br
-= link_to 'Add new peer ally', new_peer_ally_path, :id => 'footer'
+  %br
+  = link_to 'Add new peer ally', new_peer_ally_path
+  // :id => 'footer'
 
 
 / Latest compiled and minified JavaScript
