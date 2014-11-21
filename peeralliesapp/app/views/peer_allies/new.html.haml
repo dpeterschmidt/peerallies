@@ -1,28 +1,45 @@
-= stylesheet_link_tag "form"
-- if @peer_ally.errors.any?
-  #error_explanation
-    %h2
-      = pluralize(@peer_ally.errors.count, "error")
-      prohibited this post from being saved:
+= form_for @peer_ally, url: {action: "create"} do |f|
+  - if @peer_ally.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@peer_ally.errors.count, "error")
+        prohibited this peer_ally from being saved:
+      %ul
+        - @peer_ally.errors.full_messages.each do |msg|
+          %li= msg
+  .actions
+    = f.label :name, 'Name', :id => "name"
+    = f.text_field :name
 
-  - @peer_ally.errors.full_messages.each do |msg|
-    %li= msg
+    = f.label :bio, 'Biography'
+    = f.text_area :bio
 
-%h1 Create Your Peer Ally Profile
+    = f.select :grade, options_for_select(['Freshman', 'Sophmore','Junior', 'Senior']), include_blank: true
 
-= form_tag('/peer_allies', :multipart => true) do 
+    = f.label :avatar, 'Avatar Photo'
+    = f.file_field :avatar
+
+    = f.submit
+
+
+
+// = stylesheet_link_tag "form"
+
+// %h1 Create Your Peer Ally Profile
+
+// = form_tag('/peer_allies', :multipart => true) do 
   
-  = label :peer_ally, :name, 'Name', :id => "name"
-  = text_field :peer_ally, :name, :id => "name"
+//   = label :peer_ally, :name, 'Name', :id => "name"
+//   = text_field :peer_ally, :name, :id => "name"
 
-  = label :peer_ally, :bio, 'Biography'
-  = text_area :peer_ally, :bio
+//   = label :peer_ally, :bio, 'Biography'
+//   = text_area :peer_ally, :bio
 
-  = label :peer_ally, :grade, 'Grade'
-  // = grades_array = ['Freshman', 'Sophmore']
-  =select :peer_ally, :grade, options_for_select(['Freshman', 'Sophmore','Junior', 'Senior']), include_blank: true                                                 |
+//   = label :peer_ally, :grade, 'Grade'
+//   // = grades_array = ['Freshman', 'Sophmore']
+//   =select :peer_ally, :grade, options_for_select(['Freshman', 'Sophmore','Junior', 'Senior']), include_blank: true                                                 |
 
-  = label :peer_ally, :avatar, 'Avatar Photo'
-  = file_field :peer_ally, :avatar
+//   = label :peer_ally, :avatar, 'Avatar Photo'
+//   = file_field :peer_ally, :avatar
 
-  = submit_tag 'Save Changes', :id => "submit"
+//   = submit_tag 'Save Changes', :id => "submit"

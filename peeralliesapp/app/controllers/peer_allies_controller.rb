@@ -3,6 +3,7 @@
   # GET /peer_allies.json
   def index
     @peer_allies = PeerAlly.all
+    @new_ally = PeerAlly.create
 
     # respond_to do |format|
     #   format.html # index.html.erb
@@ -41,7 +42,7 @@
   # GET /peer_allies/new
   # GET /peer_allies/new.json
   def new
-    # @peer_ally = PeerAlly.new
+    @peer_ally = PeerAlly.new
     # respond_to do |format|
     #   format.html # new.html.erb
     #   format.json { render json: @peer_ally }
