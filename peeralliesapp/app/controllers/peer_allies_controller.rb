@@ -57,18 +57,24 @@
   # POST /peer_allies.json
   def create
     # puts "*****************************************************************************"+PeerAlly.find(params[:peer_ally])
-    @peer_ally = PeerAlly.create!(params[:peer_ally])
+    @peer_ally = PeerAlly.new(params[:peer_ally])
 
-    respond_to do |format|
-      if @peer_ally.save
-        format.html { redirect_to @peer_ally, notice: 'Peer ally was successfully created.' }
-        format.json { render json: @peer_ally, status: :created, location: @peer_ally }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @peer_ally.errors, status: :unprocessable_entity }
+    if @peer_ally.valid?
+      @peer_ally.save
+      flash[:notice] = "Your profile was successfully created!"
+      redirect_to(@peer_ally) and return
+    else
+      render(:action => :new)
       end
     end
-  end
+
+    # respond_to do |format|
+    #   if @peer_ally.save
+      #   format.html { redirect_to @peer_ally, notice: 'Peer ally was successfully created.' }
+      #   format.json { render json: @peer_ally, status: :created, location: @peer_ally }
+      # else
+      #   format.html { render action: "new" }
+      #   format.json { render json: @peer_ally.errors, status: :unprocessable_entity }
 
   # PUT /peer_allies/1
   # PUT /peer_allies/1.json

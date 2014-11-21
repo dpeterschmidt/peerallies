@@ -1,4 +1,12 @@
 = stylesheet_link_tag "form"
+- if @peer_ally.errors.any?
+  #error_explanation
+    %h2
+      = pluralize(@peer_ally.errors.count, "error")
+      prohibited this post from being saved:
+
+  - @peer_ally.errors.full_messages.each do |msg|
+    %li= msg
 
 %h1 Create Your Peer Ally Profile
 
