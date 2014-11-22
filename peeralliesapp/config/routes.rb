@@ -16,6 +16,10 @@ Peeralliesapp::Application.routes.draw do
 
   match :ally, :to => 'peer_allies#ally'
 
+  match :information, :to => 'peer_allies#information'
+
+  match :about, :to => 'peer_allies#about'
+
   post "/peer_allies/new" => 'peer_allies#create'
 
   # match :ally_list, :to => redirect('ally_list')
