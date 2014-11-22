@@ -10500,3 +10500,1349 @@ ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
 
 
   Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-22 13:49:45 -0800
+Processing by PeerAlliesController#crisis_info as HTML
+  Rendered peer_allies/crisis_info.html within layouts/application (0.1ms)
+Completed 200 OK in 4.0ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:49:45 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:49:46 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.0ms)
+Completed 200 OK in 1.9ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:49:46 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-22 13:49:51 -0800
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/ally_list.html.haml within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 5.3ms
+
+ActionView::Template::Error (undefined method `name' for #<PeerAlly:0x007fbce8347798>):
+    16:       // .media-body
+    17:       %name
+    18:         Name:
+    19:         = link_to ally.name, peer_ally_path(ally)
+    20:     %br
+    21:       %grade
+    22:         Grade:
+  app/views/peer_allies/ally_list.html.haml:19:in `block in _app_views_peer_allies_ally_list_html_haml___132420740564449341_70224677013880'
+  app/views/peer_allies/ally_list.html.haml:10:in `each'
+  app/views/peer_allies/ally_list.html.haml:10:in `_app_views_peer_allies_ally_list_html_haml___132420740564449341_70224677013880'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-22 13:50:47 -0800
+Processing by PeerAlliesController#crisis_info as HTML
+  Rendered peer_allies/crisis_info.html within layouts/application (0.1ms)
+Completed 200 OK in 3.8ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:50:47 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:50:48 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.1ms)
+Completed 200 OK in 3.4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:50:48 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:51:10 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.8ms)
+Completed 200 OK in 3.0ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:51:10 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:51:23 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.8ms)
+Completed 200 OK in 2.7ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:51:23 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:51:25 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.6ms)
+Completed 200 OK in 3.2ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:51:25 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:51:42 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.9ms)
+Completed 200 OK in 3.6ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:51:42 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:51:53 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.3ms)
+Completed 200 OK in 2.3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:51:53 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-22 13:51:58 -0800
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3.6ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:51:58 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-22 13:52:16 -0800
+Processing by PeerAlliesController#crisis_info as HTML
+  Rendered peer_allies/crisis_info.html within layouts/application (0.0ms)
+Completed 200 OK in 2.7ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:52:16 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:52:16 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.8ms)
+Completed 200 OK in 2.8ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:52:16 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:53:08 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.4ms)
+Completed 200 OK in 2.8ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:53:08 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-22 13:53:35 -0800
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3.5ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:53:35 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-22 13:53:42 -0800
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4.7ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:53:42 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-22 13:54:20 -0800
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4.0ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:54:20 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-22 13:54:27 -0800
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5.4ms (Views: 4.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:54:27 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-22 13:54:28 -0800
+Processing by PeerAlliesController#crisis_info as HTML
+  Rendered peer_allies/crisis_info.html within layouts/application (0.0ms)
+Completed 200 OK in 2.9ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:54:28 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:54:29 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (1.3ms)
+Completed 200 OK in 3.5ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:54:29 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-22 13:56:13 -0800
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4.5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:56:13 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-22 13:57:06 -0800
+Processing by PeerAlliesController#crisis_info as HTML
+  Rendered peer_allies/crisis_info.html within layouts/application (0.0ms)
+Completed 200 OK in 2.7ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:57:06 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:57:07 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (1.2ms)
+Completed 200 OK in 3.7ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:57:07 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:57:08 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.5ms)
+Completed 200 OK in 3.0ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:57:08 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:57:14 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.7ms)
+Completed 200 OK in 2.5ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:57:14 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:57:14 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.6ms)
+Completed 200 OK in 3.3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:57:14 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:57:15 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.4ms)
+Completed 200 OK in 2.2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:57:15 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:58:03 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (1.1ms)
+Completed 200 OK in 4.5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:58:03 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2014-11-22 13:58:45 -0800
+Processing by PeerAlliesController#contact as HTML
+
+Sent mail to peeralliesups@gmail.com (1066.3ms)
+Date: Sat, 22 Nov 2014 13:58:45 -0800
+From: peeralliesups@gmail.com
+To: peeralliesups@gmail.com
+Message-ID: <547107154df42_2c53fde736747c448010@fac-mep-5729.pugetsound.edu.mail>
+Subject: We received your request to get in touch with an ally
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+An Ally will be in touch with you as soon as possible.  In the meantime, be sure to review the crisis information on our website to be sure that you are aware of all the avenues available to you for dealing with the incident.
+Redirected to http://localhost:3000/index
+Completed 302 Found in 1072.2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-22 13:58:46 -0800
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4.0ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:58:46 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:59:06 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (1.0ms)
+Completed 200 OK in 4.5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:59:06 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:59:17 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.8ms)
+Completed 200 OK in 2.9ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:59:17 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-22 13:59:32 -0800
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3.1ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:59:32 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-22 13:59:33 -0800
+Processing by PeerAlliesController#crisis_info as HTML
+  Rendered peer_allies/crisis_info.html within layouts/application (0.0ms)
+Completed 200 OK in 1.8ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:59:33 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 13:59:34 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.4ms)
+Completed 200 OK in 2.2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 13:59:34 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-22 14:00:20 -0800
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (0.6ms)
+Completed 200 OK in 2.7ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 14:00:20 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-22 14:00:22 -0800
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7.2ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 14:00:22 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-22 14:00:56 -0800
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3.1ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 14:00:56 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-22 14:00:57 -0800
+Processing by PeerAlliesController#crisis_info as HTML
+  Rendered peer_allies/crisis_info.html within layouts/application (0.1ms)
+Completed 200 OK in 3.8ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 14:00:57 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-22 14:01:27 -0800
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54.4ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-22 14:01:27 -0800
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bethanderson/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bethanderson/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
