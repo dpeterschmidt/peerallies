@@ -3,7 +3,7 @@
   # GET /peer_allies.json
   def index
     @peer_allies = PeerAlly.all
-    @new_ally = PeerAlly.create
+    #@new_ally = PeerAlly.create
 
     # respond_to do |format|
     #   format.html # index.html.erb

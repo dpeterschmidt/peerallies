@@ -1,0 +1,19 @@
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/peer_allies" for 127.0.0.1 at 2014-10-27 22:58:20 -0700
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.0ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 267.2ms (Views: 60.5ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-10-27 22:58:21 -0700
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1.6ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
