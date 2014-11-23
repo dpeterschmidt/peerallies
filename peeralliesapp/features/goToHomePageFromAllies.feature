@@ -4,5 +4,5 @@ Feature: As a user
 
 Scenario: Go to the home page
 	Given I am on the peer allies page
-	When I got to the home page
+	When I go to the home page
 	Then I should be on the home page
