@@ -2,7 +2,7 @@ When(/^I click "(.*?)"$/) do |arg1|
   click_button(arg1)
 end
 
-Then(/^the calendar should be on the screen$/) do
+Then(/^the calendar should be on the screen$/) pending=true do
   regexp = Regexp.new('/calendar')
 
   if page.respond_to? :should

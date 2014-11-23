@@ -16837,3 +16837,68 @@ Migrating to CreatePeerAllies (20141112044655)
   [1m[35m (0.4ms)[0m  CREATE TABLE "peer_allies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "grade" varchar(255), "bio" text) 
 SQLite3::SQLException: table "peer_allies" already exists: CREATE TABLE "peer_allies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "grade" varchar(255), "bio" text) 
   [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 00:08:24 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (6.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 84.4ms (Views: 51.8ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-23 00:09:18 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (18.6ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 103.3ms (Views: 67.6ms | ActiveRecord: 30.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 00:10:36 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (2.9ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 73.8ms (Views: 48.8ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 00:17:40 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.7ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49.1ms (Views: 33.4ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 00:18:04 -0400
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211)
+Processing by PeerAlliesController#index as HTML
+  [1m[35mCACHE (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 58.2ms (Views: 48.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 00:19:00 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 76.9ms (Views: 62.9ms | ActiveRecord: 0.1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
