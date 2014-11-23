@@ -24,6 +24,15 @@ Peeralliesapp::Application.routes.draw do
 
   post "/peer_allies/new" => 'peer_allies#create'
 
+
+  # routing for authentication
+get 'auth/:provider/callback' => 'sessions#create'
+match 'logout' => 'sessions#destroy'
+get 'auth/failure' => 'sessions#failure'
+
+# for testing - DELETE THIS FOR PRODUCTION
+match 'test_login' => 'sessions#test_login' 
+
   # match :ally_list, :to => redirect('ally_list')
 
   # The priority is based upon order of creation:

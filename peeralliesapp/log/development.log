@@ -18737,3 +18737,2541 @@ ActionController::RoutingError (No route matches [GET] "/peer_allies/styles/main
 
 
   Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 18:01:32 -0400
+Connecting to database specified by database.yml
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/ally_list.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 207.9ms (Views: 100.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:01:34 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/information" for 127.0.0.1 at 2014-11-23 18:01:38 -0400
+Processing by PeerAlliesController#information as HTML
+  Rendered peer_allies/information.html within layouts/application (0.3ms)
+Completed 200 OK in 7.2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:01:38 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-11-23 18:01:40 -0400
+Processing by PeerAlliesController#about as HTML
+  Rendered peer_allies/about within layouts/application (0.4ms)
+Completed 200 OK in 6.5ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:01:40 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-23 18:01:41 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9.7ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:01:41 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 18:01:44 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/ally_list.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 12.5ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:01:44 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/peer_allies/1" for 127.0.0.1 at 2014-11-23 18:01:50 -0400
+Processing by PeerAlliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered peer_allies/show.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 15.9ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/peer_allies/styles/main.css" for 127.0.0.1 at 2014-11-23 18:01:51 -0400
+
+ActionController::RoutingError (No route matches [GET] "/peer_allies/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/peer_allies/1/edit" for 127.0.0.1 at 2014-11-23 18:02:01 -0400
+Processing by PeerAlliesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPeerAlly Load (1.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered peer_allies/edit.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 19.6ms (Views: 16.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/peer_allies/1/styles/main.css" for 127.0.0.1 at 2014-11-23 18:02:01 -0400
+
+ActionController::RoutingError (No route matches [GET] "/peer_allies/1/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/peer_allies/1" for 127.0.0.1 at 2014-11-23 18:02:04 -0400
+Processing by PeerAlliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered peer_allies/show.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 10.6ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/peer_allies/styles/main.css" for 127.0.0.1 at 2014-11-23 18:02:04 -0400
+
+ActionController::RoutingError (No route matches [GET] "/peer_allies/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 18:02:06 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/ally_list.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 4.6ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:02:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/peer_allies/1" for 127.0.0.1 at 2014-11-23 18:02:12 -0400
+Processing by PeerAlliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered peer_allies/show.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 11.1ms (Views: 9.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/peer_allies/styles/main.css" for 127.0.0.1 at 2014-11-23 18:02:12 -0400
+
+ActionController::RoutingError (No route matches [GET] "/peer_allies/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/information" for 127.0.0.1 at 2014-11-23 18:02:21 -0400
+Processing by PeerAlliesController#information as HTML
+  Rendered peer_allies/information.html within layouts/application (0.0ms)
+Completed 200 OK in 1.8ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:02:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-11-23 18:02:23 -0400
+Processing by PeerAlliesController#about as HTML
+  Rendered peer_allies/about within layouts/application (0.1ms)
+Completed 200 OK in 8.9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:02:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 18:02:40 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/ally_list.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 12.7ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:02:40 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2014-11-23 18:02:45 -0400
+Processing by PeerAlliesController#calendar as HTML
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/calendar.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 11.1ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:02:45 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.3ms)
+
+
+Started GET "/information" for 127.0.0.1 at 2014-11-23 18:02:46 -0400
+Processing by PeerAlliesController#information as HTML
+  Rendered peer_allies/information.html within layouts/application (0.0ms)
+Completed 200 OK in 9.0ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:02:46 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2014-11-23 18:02:47 -0400
+Processing by PeerAlliesController#calendar as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/calendar.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 7.9ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:02:47 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-23 18:11:04 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3.3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:11:04 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-23 18:11:06 -0400
+Processing by PeerAlliesController#crisis_info as HTML
+  Rendered peer_allies/crisis_info.html within layouts/application (0.3ms)
+Completed 200 OK in 3.0ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:11:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/option" for 127.0.0.1 at 2014-11-23 18:11:08 -0400
+Processing by PeerAlliesController#option as HTML
+  Rendered peer_allies/option.html within layouts/application (1.1ms)
+Completed 200 OK in 15.7ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:11:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePeerAllies (20141112044655)
+Migrating to AddAvatarsToPeerAllies (20141113065538)
+Migrating to AddAuthentication (20141123222303)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20141123222303')
+  [1m[36m (13.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 18:50:13 -0400
+Connecting to database specified by database.yml
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.4ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 364.5ms (Views: 296.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:50:16 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 18:50:18 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/ally_list.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 13.2ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:50:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 18:50:20 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.5ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:23:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 18:51:35 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 59.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:23:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 18:51:37 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.5ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:23:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/peer_allies/new" for 127.0.0.1 at 2014-11-23 18:53:54 -0400
+Processing by PeerAlliesController#new as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/new.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 26.6ms (Views: 14.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/peer_allies/styles/main.css" for 127.0.0.1 at 2014-11-23 18:53:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/peer_allies/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 18:53:56 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/ally_list.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 16.3ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:53:56 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.5ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 18:53:58 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.8ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:23:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.7ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 18:57:56 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.5ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:23:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (52.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.4ms)
+
+
+Started GET "/peer_allies/new" for 127.0.0.1 at 2014-11-23 18:57:58 -0400
+Processing by PeerAlliesController#new as HTML
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/new.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 9.8ms (Views: 8.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/peer_allies/styles/main.css" for 127.0.0.1 at 2014-11-23 18:57:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/peer_allies/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2014-11-23 18:58:00 -0400
+Processing by PeerAlliesController#calendar as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/calendar.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 13.5ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:58:00 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 18:58:01 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/ally_list.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 4.5ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 18:58:01 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 18:58:13 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 1.2ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:23:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 18:58:53 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.6ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:23:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:03:06 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 18.2ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:03:08 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:07:02 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (46.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.1ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:09:38 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:11:14 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 6.2ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:13:07 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.3ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:13:30 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 9.7ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:14:01 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (54.5ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:19:23 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 7.0ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:19:26 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:23:16 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/peer_allies/new" for 127.0.0.1 at 2014-11-23 19:27:21 -0400
+Processing by PeerAlliesController#new as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/new.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 22.5ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/peer_allies/styles/main.css" for 127.0.0.1 at 2014-11-23 19:27:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/peer_allies/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.9ms)
+
+
+Started POST "/peer_allies" for 127.0.0.1 at 2014-11-23 19:27:23 -0400
+Processing by PeerAlliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HF8NdmOrPAModGrNLAjpYgw1Bku7MjaHinSG63sfk7E=", "peer_ally"=>{"name"=>"", "bio"=>"", "grade"=>""}, "commit"=>"Create Peer ally"}
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/new.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 10.4ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:27:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/information" for 127.0.0.1 at 2014-11-23 19:27:24 -0400
+Processing by PeerAlliesController#information as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/information.html within layouts/application (0.3ms)
+Completed 200 OK in 13.3ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:27:24 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.8ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2014-11-23 19:27:25 -0400
+Processing by PeerAlliesController#calendar as HTML
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/calendar.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 10.4ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:27:25 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:27:25 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/ally_list.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 10.8ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:27:25 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.3ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:27:26 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/peer_allies/1" for 127.0.0.1 at 2014-11-23 19:28:52 -0400
+Processing by PeerAlliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (5.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered peer_allies/show.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 32.6ms (Views: 18.1ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/peer_allies/styles/main.css" for 127.0.0.1 at 2014-11-23 19:28:52 -0400
+
+ActionController::RoutingError (No route matches [GET] "/peer_allies/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:28:54 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/ally_list.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 4.8ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:28:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:28:55 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:32:16 -0400
+Connecting to database specified by database.yml
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 174.7ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/test_login" for 127.0.0.1 at 2014-11-23 19:34:03 -0400
+Processing by SessionsController#test_login as HTML
+Completed 404 Not Found in 0.5ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly without an ID):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (47.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.8ms)
+
+
+Started GET "/peer_allies/1" for 127.0.0.1 at 2014-11-23 19:34:22 -0400
+Processing by PeerAlliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered peer_allies/show.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 37.0ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/peer_allies/styles/main.css" for 127.0.0.1 at 2014-11-23 19:34:22 -0400
+
+ActionController::RoutingError (No route matches [GET] "/peer_allies/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2014-11-23 19:34:23 -0400
+Processing by PeerAlliesController#calendar as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/calendar.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 15.2ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:34:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:34:24 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/_login.html.erb (1.8ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (69.3ms)
+Completed 200 OK in 78.3ms (Views: 75.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:34:24 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/auth/shibboleth" for 127.0.0.1 at 2014-11-23 19:34:31 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:34:31 -0400
+Created AuthnRequest: <samlp:AuthnRequest AssertionConsumerServiceURL='http://localhost:3000/auth/shibboleth/callback' Destination='https://idpdev.pugetsound.edu/idp/profile/SAML2/Redirect/SSO' ID='_33607c80-5597-0132-66ca-0800274518a1' IssueInstant='2014-11-23T23:34:32Z' Version='2.0' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'><saml:Issuer xmlns:saml='urn:oasis:names:tc:SAML:2.0:assertion'>http://cs240.pugetsound.edu:3000/rack-saml-sp</saml:Issuer><samlp:NameIDPolicy AllowCreate='true' Format='urn:oasis:names:tc:SAML:2.0:nameid-format:transient' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'/></samlp:AuthnRequest>
+
+
+Started POST "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:35:08 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:35:08 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"shibboleth"}
+Completed 500 Internal Server Error in 1.8ms
+
+NoMethodError (undefined method `find_by_provider_and_uid' for #<Class:0xb5d84e8c>):
+  app/controllers/sessions_controller.rb:39:in `create'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:35:55 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13.9ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:35:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:41:12 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/_login.html.erb (1.1ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 14.4ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:41:12 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/test_login" for 127.0.0.1 at 2014-11-23 19:41:36 -0400
+Processing by SessionsController#test_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HF8NdmOrPAModGrNLAjpYgw1Bku7MjaHinSG63sfk7E=", "user_id"=>"{:in=>1.0..10.0, :step=>1.0}", "commit"=>"Submit"}
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" = ? LIMIT 1[0m  [["id", "{:in=>1.0..10.0, :step=>1.0}"]]
+Completed 404 Not Found in 1.7ms
+
+ActiveRecord::RecordNotFound (Couldn't find PeerAlly with id={:in=>1.0..10.0, :step=>1.0}):
+  app/controllers/sessions_controller.rb:53:in `test_login'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started GET "/auth/shibboleth" for 127.0.0.1 at 2014-11-23 19:41:42 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:41:42 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"shibboleth"}
+Completed 500 Internal Server Error in 0.4ms
+
+NoMethodError (undefined method `find_by_provider_and_uid' for #<Class:0xb5d84e8c>):
+  app/controllers/sessions_controller.rb:39:in `create'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:41:58 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6.2ms (Views: 2.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:41:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:41:59 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/_login.html.erb (0.6ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 6.8ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:42:00 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/shibboleth" for 127.0.0.1 at 2014-11-23 19:42:01 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:42:01 -0400
+Created AuthnRequest: <samlp:AuthnRequest AssertionConsumerServiceURL='http://localhost:3000/auth/shibboleth/callback' Destination='https://idpdev.pugetsound.edu/idp/profile/SAML2/Redirect/SSO' ID='_3f03a580-5598-0132-66cb-0800274518a1' IssueInstant='2014-11-23T23:42:01Z' Version='2.0' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'><saml:Issuer xmlns:saml='urn:oasis:names:tc:SAML:2.0:assertion'>http://cs240.pugetsound.edu:3000/rack-saml-sp</saml:Issuer><samlp:NameIDPolicy AllowCreate='true' Format='urn:oasis:names:tc:SAML:2.0:nameid-format:transient' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'/></samlp:AuthnRequest>
+
+
+Started POST "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:42:20 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:42:20 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"shibboleth"}
+Completed 500 Internal Server Error in 0.6ms
+
+NoMethodError (undefined method `find_by_provider_and_uid' for #<Class:0xb5d84e8c>):
+  app/controllers/sessions_controller.rb:39:in `create'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:46:40 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 63.9ms (Views: 57.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:46:40 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:46:42 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/_login.html.erb (0.6ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 7.4ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:46:42 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/auth/shibboleth" for 127.0.0.1 at 2014-11-23 19:46:44 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:46:44 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"shibboleth"}
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."provider" = 'shibboleth' AND "peer_allies"."uid" IS NULL LIMIT 1
+SQLite3::SQLException: no such column: peer_allies.provider: SELECT  "peer_allies".* FROM "peer_allies"  WHERE "peer_allies"."provider" = 'shibboleth' AND "peer_allies"."uid" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 1.3ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: peer_allies.provider: SELECT  "peer_allies".* FROM "peer_allies"  WHERE "peer_allies"."provider" = 'shibboleth' AND "peer_allies"."uid" IS NULL LIMIT 1):
+  app/models/peer_ally.rb:37:in `find_by_provider_and_uid'
+  app/controllers/sessions_controller.rb:39:in `create'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/auth/shibboleth" for 127.0.0.1 at 2014-11-23 19:47:02 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:47:02 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"shibboleth"}
+Completed 500 Internal Server Error in 14.9ms
+
+NoMethodError (undefined method `find_by_provider_and_uid' for #<Class:0xb5943aa8>):
+  app/controllers/sessions_controller.rb:39:in `create'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:47:09 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20.0ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:47:09 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:47:11 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/_login.html.erb (0.5ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 11.2ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:47:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/shibboleth" for 127.0.0.1 at 2014-11-23 19:47:12 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:47:12 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"shibboleth"}
+Completed 500 Internal Server Error in 0.5ms
+
+NoMethodError (undefined method `find_by_provider_and_uid' for #<Class:0xb5943aa8>):
+  app/controllers/sessions_controller.rb:39:in `create'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (52.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:47:17 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8.9ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:47:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:47:24 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7.6ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:47:24 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:47:25 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/_login.html.erb (0.7ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 14.0ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:47:25 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/auth/shibboleth" for 127.0.0.1 at 2014-11-23 19:47:26 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:47:26 -0400
+Created AuthnRequest: <samlp:AuthnRequest AssertionConsumerServiceURL='http://localhost:3000/auth/shibboleth/callback' Destination='https://idpdev.pugetsound.edu/idp/profile/SAML2/Redirect/SSO' ID='_00de2790-5599-0132-66cc-0800274518a1' IssueInstant='2014-11-23T23:47:26Z' Version='2.0' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'><saml:Issuer xmlns:saml='urn:oasis:names:tc:SAML:2.0:assertion'>http://cs240.pugetsound.edu:3000/rack-saml-sp</saml:Issuer><samlp:NameIDPolicy AllowCreate='true' Format='urn:oasis:names:tc:SAML:2.0:nameid-format:transient' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'/></samlp:AuthnRequest>
+
+
+Started POST "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:47:33 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:47:53 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11.5ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:47:53 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:47:55 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/_login.html.erb (0.6ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 15.7ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:47:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/shibboleth" for 127.0.0.1 at 2014-11-23 19:47:56 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:47:56 -0400
+Created AuthnRequest: <samlp:AuthnRequest AssertionConsumerServiceURL='http://localhost:3000/auth/shibboleth/callback' Destination='https://idpdev.pugetsound.edu/idp/profile/SAML2/Redirect/SSO' ID='_12883bb0-5599-0132-66cd-0800274518a1' IssueInstant='2014-11-23T23:47:56Z' Version='2.0' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'><saml:Issuer xmlns:saml='urn:oasis:names:tc:SAML:2.0:assertion'>http://cs240.pugetsound.edu:3000/rack-saml-sp</saml:Issuer><samlp:NameIDPolicy AllowCreate='true' Format='urn:oasis:names:tc:SAML:2.0:nameid-format:transient' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'/></samlp:AuthnRequest>
+
+
+Started POST "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:48:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:49:19 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8.9ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:49:19 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:49:20 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (2.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/_login.html.erb (1.8ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (62.8ms)
+Completed 200 OK in 70.5ms (Views: 64.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:49:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/shibboleth" for 127.0.0.1 at 2014-11-23 19:49:22 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:49:22 -0400
+Created AuthnRequest: <samlp:AuthnRequest AssertionConsumerServiceURL='http://localhost:3000/auth/shibboleth/callback' Destination='https://idpdev.pugetsound.edu/idp/profile/SAML2/Redirect/SSO' ID='_45d73fd0-5599-0132-66ce-0800274518a1' IssueInstant='2014-11-23T23:49:22Z' Version='2.0' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'><saml:Issuer xmlns:saml='urn:oasis:names:tc:SAML:2.0:assertion'>http://cs240.pugetsound.edu:3000/rack-saml-sp</saml:Issuer><samlp:NameIDPolicy AllowCreate='true' Format='urn:oasis:names:tc:SAML:2.0:nameid-format:transient' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'/></samlp:AuthnRequest>
+
+
+Started POST "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:49:27 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:49:28 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"shibboleth"}
+Completed 500 Internal Server Error in 0.5ms
+
+NoMethodError (undefined method `find_by_provider_and_uid' for #<Class:0xb5943aa8>):
+  app/controllers/sessions_controller.rb:39:in `create'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:50:58 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11.1ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:50:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:51:18 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (4.9ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/_login.html.erb (1.6ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 16.5ms (Views: 9.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:51:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:51:43 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10.8ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:51:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:51:46 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/_login.html.erb (0.7ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 15.2ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:51:46 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/auth/shibboleth" for 127.0.0.1 at 2014-11-23 19:51:47 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:51:47 -0400
+Created AuthnRequest: <samlp:AuthnRequest AssertionConsumerServiceURL='http://localhost:3000/auth/shibboleth/callback' Destination='https://idpdev.pugetsound.edu/idp/profile/SAML2/Redirect/SSO' ID='_9c7c1ca0-5599-0132-66cf-0800274518a1' IssueInstant='2014-11-23T23:51:47Z' Version='2.0' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'><saml:Issuer xmlns:saml='urn:oasis:names:tc:SAML:2.0:assertion'>http://cs240.pugetsound.edu:3000/rack-saml-sp</saml:Issuer><samlp:NameIDPolicy AllowCreate='true' Format='urn:oasis:names:tc:SAML:2.0:nameid-format:transient' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'/></samlp:AuthnRequest>
+
+
+Started POST "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:51:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:54:04 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16.2ms (Views: 3.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:54:04 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:54:05 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.1ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/_login.html.erb (0.6ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 18.0ms (Views: 16.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/styles/main.css" for 127.0.0.1 at 2014-11-23 19:54:05 -0400
+
+ActionController::RoutingError (No route matches [GET] "/styles/main.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/auth/shibboleth" for 127.0.0.1 at 2014-11-23 19:54:07 -0400
+
+
+Started GET "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:54:07 -0400
+Created AuthnRequest: <samlp:AuthnRequest AssertionConsumerServiceURL='http://localhost:3000/auth/shibboleth/callback' Destination='https://idpdev.pugetsound.edu/idp/profile/SAML2/Redirect/SSO' ID='_efbfb970-5599-0132-66d0-0800274518a1' IssueInstant='2014-11-23T23:54:07Z' Version='2.0' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'><saml:Issuer xmlns:saml='urn:oasis:names:tc:SAML:2.0:assertion'>http://cs240.pugetsound.edu:3000/rack-saml-sp</saml:Issuer><samlp:NameIDPolicy AllowCreate='true' Format='urn:oasis:names:tc:SAML:2.0:nameid-format:transient' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'/></samlp:AuthnRequest>
+
+
+Started POST "/auth/shibboleth/callback" for 127.0.0.1 at 2014-11-23 19:54:12 -0400
