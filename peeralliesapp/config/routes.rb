@@ -23,6 +23,7 @@ Peeralliesapp::Application.routes.draw do
   match :conf_yes, :to => 'peer_allies#conf_yes'
 
   match :survey, :to => 'peer_allies#survey'
+  
 
   post "/peer_allies/new" => 'peer_allies#create'
 
