@@ -1,9 +1,9 @@
-%head= stylesheet_link_tag "ally_list"
-/ %link{:href => "styles/main.css", :rel => "stylesheet", :type => "text/css"}
+// %head= stylesheet_link_tag "ally_list"
+%link{:href => "styles/main.css", :rel => "stylesheet", :type => "text/css"}
 / Latest compiled and minified CSS
-/ %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
+%link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
 / Optional theme
-/ %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css", :rel => "stylesheet"}
+%link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css", :rel => "stylesheet"}
 %h4
   %h1 Peer Allies
   %list
@@ -16,7 +16,8 @@
       // .media-body
       %name
         Name:
-        = link_to ally.name, peer_ally_path(ally)
+        // = link_to ally.name, peer_ally_path(ally)
+        = ally.name
     %br
       %grade
         Grade:
