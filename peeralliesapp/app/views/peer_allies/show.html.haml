@@ -1,58 +1,73 @@
-<!doctype html>
-%html
-  %head
-    %title Test
-    %link{:href => "styles/main.css", :rel => "stylesheet", :type => "text/css"}
-      / Latest compiled and minified CSS
-      %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
-        / Optional theme
-        %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css", :rel => "stylesheet"}
-  %body
-    %nav.navbar.navbar-default{:role => "navigation"}
-      .container-fluid
-        / Brand and toggle get grouped for better mobile display
-        .navbar-header
-          %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-            %span.sr-only Toggle navigation
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-        .container
-          .media
-            %a.pull-left{:href => "ally"}
-              %img.media-object.img-circle{:src => @peer_ally.avatar.url(:thumb) , :style => "width: 140px"}
-              // %img.media-object.img-circle{:alt => "Name",:src => @peer_ally.avatar.url(:thumb) , :style => "width: 200px"}
-            .media-body
-              / There's probably a cleaner way to write the breaks so that name is centered horizontally with img
-              %br
-                %br
-                  %br
-                    %h1.media-heading{:style => "font-size: 60px"}= #{@peer_ally.name}
-                    %br
-                      %br
-                        %br
-                          %h2 About Me
-                          %p= @peer_ally.bio
-                          %br
-                            %h2 Grade
-                            %ul
-                              %li= @peer_ally.grade
-        / Latest compiled and minified JavaScript
-        %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
-
-// %h2 Details about #{@peer_ally.name}
-
-// %ul#details
-//   %li
-//     bio:
-//     = @peer_ally.bio
-//   %li
-//     Grade:
-//     = @peer_ally.grade
-//   %li
-//     Avatar:
-//     %img= image_tag(@peer_ally.avatar.url(:thumb))
-
-= link_to 'Edit', edit_peer_ally_path(@peer_ally)
-= button_to 'Delete', peer_ally_path(@peer_ally), :method => :delete, :confirm => 'Are you sure?'
-= link_to 'Back to the list of Peer Allies', ally_list_path
+<html>
+  <head>
+    <title>Test</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+      <!-- Latest compiled and minified CSS
+      -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Optional theme
+        -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet"></link>
+      </link>
+    </link>
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display
+        -->
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="container">
+          <div class="media">
+            <a class="pull-left" href="ally">
+              <img class="media-object img-circle" src="<%= @peer_ally.avatar.url(:thumb) %>" style="width: 140px"/>
+              <!--/ %img.media-object.img-circle{:alt => "Name",:src => @peer_ally.avatar.url(:thumb) , :style => "width: 200px"}
+              -->
+            </a>
+            <div class="media-body">
+              <!-- There's probably a cleaner way to write the breaks so that name is centered horizontally with img
+              -->
+              <br>
+                <br>
+                  <br>
+                    <h1 class="media-heading" style="font-size: 60px">
+                      <%= #{@peer_ally.name} %>
+                    </h1>
+                    <br>
+                      <br>
+                        <br>
+                          <h2>About Me</h2>
+                          <p>
+                            <%= @peer_ally.bio %>
+                          </p>
+                          <br>
+                            <h2>Grade</h2>
+                            <ul>
+                              <li>
+                                <%= @peer_ally.grade %>
+                              </li>
+                            </ul>
+                          </br>
+                        </br>
+                      </br>
+                    </br>
+                  </br>
+                </br>
+              </br>
+            </div>
+          </div>
+        </div>
+        <!-- Latest compiled and minified JavaScript
+        -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      </div>
+    </nav>
+  </body>
+</html>

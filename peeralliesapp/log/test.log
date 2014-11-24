@@ -800,3 +800,476 @@ Started GET "/" for 127.0.0.1 at 2014-11-23 19:15:29 -0400
 Processing by PeerAlliesController#index as HTML
 Completed 500 Internal Server Error in 7.8ms
   [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 20:24:58 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/_login.html.erb (4.0ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (138.3ms)
+Completed 200 OK in 439.0ms (Views: 293.8ms | ActiveRecord: 0.9ms)
+Started GET "/peer_allies/new" for 127.0.0.1 at 2014-11-23 20:24:58 -0400
+Processing by PeerAlliesController#new as HTML
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/new.html.haml within layouts/application (52.6ms)
+Completed 200 OK in 108.0ms (Views: 72.8ms | ActiveRecord: 0.5ms)
+Started POST "/peer_allies" for 127.0.0.1 at 2014-11-23 20:24:59 -0400
+Processing by PeerAlliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "peer_ally"=>{"name"=>"Bob", "bio"=>"Bob's favorite class is software engineering", "grade"=>""}, "commit"=>"Create Peer ally"}
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/new.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 19.0ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:24:59 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 26.7ms (Views: 22.6ms | ActiveRecord: 0.6ms)
+  [1m[35m (3.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/peer_allies" for 127.0.0.1 at 2014-11-23 20:24:59 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22.7ms (Views: 7.3ms | ActiveRecord: 0.7ms)
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:24:59 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16.5ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:24:59 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.8ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19.9ms (Views: 7.2ms | ActiveRecord: 1.1ms)
+Started GET "/calendar" for 127.0.0.1 at 2014-11-23 20:24:59 -0400
+Processing by PeerAlliesController#calendar as HTML
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (5.1ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/calendar.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 25.1ms (Views: 12.7ms | ActiveRecord: 5.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:25:00 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22.7ms (Views: 17.0ms | ActiveRecord: 0.8ms)
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-23 20:25:00 -0400
+Processing by PeerAlliesController#crisis_info as HTML
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/crisis_info.html within layouts/application (0.9ms)
+Completed 200 OK in 18.9ms (Views: 14.2ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:25:00 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (2.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18.8ms (Views: 14.0ms | ActiveRecord: 2.4ms)
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 20:25:00 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/_login.html.erb (1.3ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 9.4ms (Views: 6.4ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 20:27:08 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/_login.html.erb (5.7ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (149.1ms)
+Completed 200 OK in 483.0ms (Views: 323.4ms | ActiveRecord: 1.2ms)
+Started GET "/peer_allies/new" for 127.0.0.1 at 2014-11-23 20:27:09 -0400
+Processing by PeerAlliesController#new as HTML
+  [1m[35mPeerAlly Load (0.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/new.html.haml within layouts/application (102.7ms)
+Completed 200 OK in 145.7ms (Views: 108.8ms | ActiveRecord: 0.4ms)
+Started POST "/peer_allies" for 127.0.0.1 at 2014-11-23 20:27:10 -0400
+Processing by PeerAlliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "peer_ally"=>{"name"=>"Bob", "bio"=>"Bob's favorite class is software engineering", "grade"=>""}, "commit"=>"Create Peer ally"}
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/new.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 19.4ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:27:10 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.7ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (1.7ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 44.7ms (Views: 19.0ms | ActiveRecord: 2.5ms)
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-23 20:27:10 -0400
+Processing by PeerAlliesController#crisis_info as HTML
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/crisis_info.html within layouts/application (0.9ms)
+Completed 200 OK in 16.9ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+Started GET "/option" for 127.0.0.1 at 2014-11-23 20:27:10 -0400
+Processing by PeerAlliesController#option as HTML
+  [1m[36mPeerAlly Load (0.4ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/option.html within layouts/application (3.1ms)
+Completed 200 OK in 16.8ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+Started GET "/survey" for 127.0.0.1 at 2014-11-23 20:27:10 -0400
+Processing by PeerAlliesController#survey as HTML
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/survey.html within layouts/application (2.1ms)
+Completed 200 OK in 13.2ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/peer_allies" for 127.0.0.1 at 2014-11-23 20:27:10 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.5ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10.1ms (Views: 6.8ms | ActiveRecord: 0.6ms)
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:27:10 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 12.7ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:27:10 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.5ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 25.0ms (Views: 10.6ms | ActiveRecord: 0.7ms)
+Started GET "/calendar" for 127.0.0.1 at 2014-11-23 20:27:11 -0400
+Processing by PeerAlliesController#calendar as HTML
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/calendar.html.haml within layouts/application (26.6ms)
+Completed 200 OK in 45.8ms (Views: 33.7ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:27:11 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.5ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 24.0ms (Views: 13.7ms | ActiveRecord: 0.7ms)
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-23 20:27:11 -0400
+Processing by PeerAlliesController#crisis_info as HTML
+  [1m[36mPeerAlly Load (0.4ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/crisis_info.html within layouts/application (0.1ms)
+Completed 200 OK in 15.7ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:27:11 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 36.0ms (Views: 11.5ms | ActiveRecord: 0.6ms)
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 20:27:11 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.4ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/_login.html.erb (2.8ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (18.6ms)
+Completed 200 OK in 36.8ms (Views: 22.2ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 20:28:30 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/_login.html.erb (5.3ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (167.3ms)
+Completed 200 OK in 541.1ms (Views: 361.9ms | ActiveRecord: 1.1ms)
+Started GET "/peer_allies/new" for 127.0.0.1 at 2014-11-23 20:28:31 -0400
+Processing by PeerAlliesController#new as HTML
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/new.html.haml within layouts/application (92.7ms)
+Completed 200 OK in 133.8ms (Views: 100.3ms | ActiveRecord: 0.5ms)
+Started POST "/peer_allies" for 127.0.0.1 at 2014-11-23 20:28:31 -0400
+Processing by PeerAlliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "peer_ally"=>{"name"=>"Bob", "bio"=>"Bob's favorite class is software engineering", "grade"=>""}, "commit"=>"Create Peer ally"}
+  [1m[36mPeerAlly Load (0.4ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/new.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 27.4ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:28:32 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.6ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 33.4ms (Views: 15.9ms | ActiveRecord: 0.8ms)
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-23 20:28:32 -0400
+Processing by PeerAlliesController#crisis_info as HTML
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/crisis_info.html within layouts/application (1.1ms)
+Completed 200 OK in 13.3ms (Views: 8.8ms | ActiveRecord: 0.5ms)
+Started GET "/option" for 127.0.0.1 at 2014-11-23 20:28:32 -0400
+Processing by PeerAlliesController#option as HTML
+  [1m[36mPeerAlly Load (3.5ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/option.html within layouts/application (3.2ms)
+Completed 200 OK in 17.2ms (Views: 10.3ms | ActiveRecord: 3.5ms)
+Started GET "/survey" for 127.0.0.1 at 2014-11-23 20:28:32 -0400
+Processing by PeerAlliesController#survey as HTML
+  [1m[35mPeerAlly Load (0.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/survey.html within layouts/application (1.0ms)
+Completed 200 OK in 16.9ms (Views: 12.6ms | ActiveRecord: 0.4ms)
+Started GET "/conf_yes" for 127.0.0.1 at 2014-11-23 20:28:32 -0400
+Processing by PeerAlliesController#conf_yes as HTML
+  [1m[36mPeerAlly Load (0.4ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/conf_yes.html within layouts/application (1.2ms)
+Completed 200 OK in 14.8ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+Started GET "/index" for 127.0.0.1 at 2014-11-23 20:28:32 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10.0ms (Views: 5.8ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/peer_allies" for 127.0.0.1 at 2014-11-23 20:28:32 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.4ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 32.3ms (Views: 4.9ms | ActiveRecord: 0.9ms)
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:28:32 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30.7ms (Views: 15.5ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (8.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (7.7ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:28:33 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 32.4ms (Views: 15.5ms | ActiveRecord: 0.7ms)
+Started GET "/calendar" for 127.0.0.1 at 2014-11-23 20:28:33 -0400
+Processing by PeerAlliesController#calendar as HTML
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/calendar.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 48.9ms (Views: 44.8ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:28:33 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (10.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 33.1ms (Views: 18.1ms | ActiveRecord: 10.6ms)
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-23 20:28:33 -0400
+Processing by PeerAlliesController#crisis_info as HTML
+  [1m[35mPeerAlly Load (5.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/crisis_info.html within layouts/application (0.1ms)
+Completed 200 OK in 22.3ms (Views: 4.9ms | ActiveRecord: 5.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-23 20:28:33 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.5ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 26.6ms (Views: 22.7ms | ActiveRecord: 0.7ms)
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 20:28:33 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[36mPeerAlly Load (0.4ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/_login.html.erb (2.3ms)
+  Rendered peer_allies/ally_list.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 46.7ms (Views: 21.2ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-24 16:16:24 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.8ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/_login.html.erb (5.1ms)
+  Rendered peer_allies/ally_list.html.erb within layouts/application (172.3ms)
+Completed 200 OK in 593.1ms (Views: 418.0ms | ActiveRecord: 1.7ms)
+Started GET "/peer_allies/new" for 127.0.0.1 at 2014-11-24 16:16:25 -0400
+Processing by PeerAlliesController#new as HTML
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/new.html.haml within layouts/application (132.1ms)
+Completed 200 OK in 218.5ms (Views: 151.2ms | ActiveRecord: 0.3ms)
+Started POST "/peer_allies" for 127.0.0.1 at 2014-11-24 16:16:26 -0400
+Processing by PeerAlliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "peer_ally"=>{"name"=>"Bob", "bio"=>"Bob's favorite class is software engineering", "grade"=>""}, "commit"=>"Create Peer ally"}
+  [1m[36mPeerAlly Load (4.9ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/new.html.haml within layouts/application (25.7ms)
+Completed 200 OK in 56.5ms (Views: 35.3ms | ActiveRecord: 4.9ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:16:26 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48.5ms (Views: 37.5ms | ActiveRecord: 0.8ms)
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-24 16:16:26 -0400
+Processing by PeerAlliesController#crisis_info as HTML
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/crisis_info.html within layouts/application (1.0ms)
+Completed 200 OK in 31.1ms (Views: 17.1ms | ActiveRecord: 0.3ms)
+Started GET "/option" for 127.0.0.1 at 2014-11-24 16:16:26 -0400
+Processing by PeerAlliesController#option as HTML
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/option.html within layouts/application (7.1ms)
+Completed 200 OK in 34.4ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+Started GET "/survey" for 127.0.0.1 at 2014-11-24 16:16:26 -0400
+Processing by PeerAlliesController#survey as HTML
+  [1m[35mPeerAlly Load (0.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/survey.html within layouts/application (1.9ms)
+Completed 200 OK in 34.7ms (Views: 22.7ms | ActiveRecord: 0.4ms)
+Started GET "/email" for 127.0.0.1 at 2014-11-24 16:16:26 -0400
+Processing by PeerAlliesController#email as HTML
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+
+Sent mail to peerallies.pugetsound@gmail.com (199.0ms)
+Date: Mon, 24 Nov 2014 16:16:27 -0400
+From: peeralliesups@gmail.com
+To: peerallies.pugetsound@gmail.com
+Message-ID: <5473921b5fff6_97845cd81c63696@saasbook.mail>
+Subject: Ally Request
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+An Ally will be in touch with you as soon as possible.  In the meantime, be sure to review the crisis information on our website to be sure that you are aware of all the avenues available to you for dealing with the incident.
+Redirected to http://www.example.com/conf_yes
+Completed 302 Found in 542.2ms (ActiveRecord: 0.3ms)
+Started GET "/conf_yes" for 127.0.0.1 at 2014-11-24 16:16:27 -0400
+Processing by PeerAlliesController#conf_yes as HTML
+  [1m[35mPeerAlly Load (1.5ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  Rendered peer_allies/conf_yes.html within layouts/application (0.8ms)
+Completed 200 OK in 11.7ms (Views: 7.5ms | ActiveRecord: 1.5ms)
+Started GET "/index" for 127.0.0.1 at 2014-11-24 16:16:27 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (5.0ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21.0ms (Views: 12.5ms | ActiveRecord: 5.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/peer_allies" for 127.0.0.1 at 2014-11-24 16:16:27 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.5ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (10.2ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22.7ms (Views: 9.3ms | ActiveRecord: 10.7ms)
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:16:27 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12.6ms (Views: 9.9ms | ActiveRecord: 0.6ms)
+  [1m[36m (11.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:16:27 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (0.5ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 25.9ms (Views: 9.5ms | ActiveRecord: 0.8ms)
+Started GET "/calendar" for 127.0.0.1 at 2014-11-24 16:16:27 -0400
+Processing by PeerAlliesController#calendar as HTML
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/calendar.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 54.7ms (Views: 41.2ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (7.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:16:28 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[36mPeerAlly Load (1.5ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" 
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20.6ms (Views: 8.5ms | ActiveRecord: 1.7ms)
+Started GET "/crisis_info" for 127.0.0.1 at 2014-11-24 16:16:28 -0400
+Processing by PeerAlliesController#crisis_info as HTML
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1[0m
+  Rendered peer_allies/crisis_info.html within layouts/application (0.2ms)
+Completed 200 OK in 13.2ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:16:28 -0400
+Processing by PeerAlliesController#index as HTML
+  [1m[35mPeerAlly Load (0.4ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.3ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16.8ms (Views: 7.7ms | ActiveRecord: 0.7ms)
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-24 16:16:28 -0400
+Processing by PeerAlliesController#ally_list as HTML
+  [1m[35mPeerAlly Load (0.3ms)[0m  SELECT "peer_allies".* FROM "peer_allies" WHERE "peer_allies"."id" IS NULL LIMIT 1
+  [1m[36mPeerAlly Load (0.2ms)[0m  [1mSELECT "peer_allies".* FROM "peer_allies" [0m
+  Rendered peer_allies/_login.html.erb (1.4ms)
+  Rendered peer_allies/ally_list.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 18.5ms (Views: 15.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
