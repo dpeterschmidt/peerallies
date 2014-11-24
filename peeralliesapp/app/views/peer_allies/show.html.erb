@@ -10,11 +10,13 @@
         <!-- There's probably a cleaner way to write the breaks so that name is centered horizontally with img
         -->
         <br>
-          <br>
             <br>
               <h1 class="media-heading" style="font-size: 60px">
-                <%= #{@peer_ally.name} %>
+                <%= @peer_ally.name %>
               </h1>
+              <br>
+              <br>
+              <hr style = "width:200em; height:2px">
               <br>
                 <br>
                   <br>
@@ -24,11 +26,9 @@
                     </p>
                     <br>
                       <h2>Grade</h2>
-                      <ul>
-                        <li>
-                          <%= @peer_ally.grade %>
-                        </li>
-                      </ul>
+                      <p>
+                        <%= @peer_ally.grade %>   
+                      </p>
                     </br>
                   </br>
                 </br>
@@ -38,5 +38,8 @@
         </br>
       </div>
     </div>
+    <%= link_to 'Edit', edit_peer_ally_path(@peer_ally) %>
+    <%= button_to 'Delete', peer_ally_path(@peer_ally), :method => :delete, :confirm => 'Are you sure?' %>
+    <%= link_to 'Back to the list of Peer Allies', ally_list_path %>
   </div>
 </body>
