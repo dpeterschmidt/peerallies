@@ -3,11 +3,6 @@ class ApplicationController < ActionController::Base
 
   before_filter :set_current_user #do this before any other controller
 
-  # Not sure if this should be here hack for an error when using UPS login
-  def self.find_by_provider_and_uid(provider, uid)
-  where(provider: provider, uid: uid).first
-end
-
   protected # prevents methods from being invoked by a route
 
 	  def set_current_user
