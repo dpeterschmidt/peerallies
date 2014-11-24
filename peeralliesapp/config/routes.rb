@@ -8,6 +8,7 @@ Peeralliesapp::Application.routes.draw do
   match :ally_list, :to => 'peer_allies#ally_list'
   match :contact, :to => 'peer_allies#contact'
 
+  match :email, :to => 'peer_allies#email'
   match :calendar, :to => 'peer_allies#calendar'
 
   match :crisis_info, :to => 'peer_allies#crisis_info'

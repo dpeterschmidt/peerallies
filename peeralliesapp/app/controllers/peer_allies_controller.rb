@@ -104,7 +104,7 @@
     end
   end
 
-  def contact
+  def email
     # right now this just sends an email to a hardcoded email address
     # which is actually the email I set up for this project: peeralliesups@gmail.com
     # later functionality should include
@@ -113,11 +113,12 @@
     # email address in app / mailers / ally_mailer.rb
     # to an email you have access to
     # at least until we get the form set up
+
     AllyMailer.notification_email.deliver
 
     # this is just so the route works for now
     # this is a TEMPORARY SOLUTION as far as I know
-    redirect_to :index
+    redirect_to :conf_yes
     
   end
 
