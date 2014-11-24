@@ -250,11 +250,7 @@ DEPENDENCIES
   omniauth
   omniauth-shibboleth
   paperclip (~> 4.2)
-<<<<<<< HEAD
-=======
-  pg
   rack-saml (>= 0.1.1)
->>>>>>> 0ba66eafe309fbede541aafe7c878eefabb4fc2b
   rails (= 3.2.18)
   rspec-rails
   sass-rails (~> 3.2.3)
