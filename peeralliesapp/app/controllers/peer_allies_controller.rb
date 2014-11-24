@@ -114,7 +114,7 @@
     # to an email you have access to
     # at least until we get the form set up
 
-    AllyMailer.notification_email("name", "peeralliesups@gmail.com", "reason").deliver
+    AllyMailer.notification_email.deliver
 
     # this is just so the route works for now
     # this is a TEMPORARY SOLUTION as far as I know
