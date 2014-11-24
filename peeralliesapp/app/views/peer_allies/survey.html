@@ -1,46 +1,11 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Test</title>
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-default" style="color: #700000" role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Peer Allies</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Allies</a></li>
-            <li><a href="#">Calendar</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
     <div class = "container">
 
-      <h1 style = "text-align: center; font-size: 60px">Optional Survey</h1>
+      <h1 style = "text-align: center; font-size: 60px">Alert Peer Allies</h1>
       <div style = "text-align: center; font-size: 20px">
-        <p>If you wish to provide information about yourself to better help your experience with Peer Allies, please do so below.</p>
-        <p>However, if you do not feel comfortable providing such information, please go to the next page to confirm your appointment.</p>
+        <p>Please fill out the information below to your comfort level.</p>
+        <p>This information will be sent to Peer Allies in a confidential email. Expect a peer ally to reach out to you blah</p>
       </div>
 
       <br>
@@ -58,13 +23,13 @@
               <label for="inputPassword">Reason</label>
               <input type="text" class="form-control" id="inputReason" placeholder="Why would you like to speak to an Ally?">
           </div>
+
           <div class="form-group">
-              <label for="inputPassword">Meetup Location</label>
-              <input type="text" class="form-control" id="inputLocation" placeholder="Is there a certain location on campus you would like to meet with your Ally?">
+              <label for="inputPassword">Comments</label>
+              <input type="text" class="form-control" id="inputReason" placeholder="Anything else you would like to tell Peer Allies">
           </div>
 
-          
-          <button type="submit" class="btn btn-primary">Submit Answers</button>
+          <p><a href="conf_yes" class="btn btn-primary btn-lg" role="button">Send email to Peer Allies</a></p>
       </form>
 
     </div>

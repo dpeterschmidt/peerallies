@@ -728,3 +728,75 @@ Processing by PeerAlliesController#ally_list as HTML
   Rendered peer_allies/ally_list.html.haml within layouts/application (19.1ms)
 Completed 200 OK in 31.2ms (Views: 28.6ms | ActiveRecord: 0.2ms)
   [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (4.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 18:59:58 -0400
+Processing by PeerAlliesController#ally_list as HTML
+Completed 500 Internal Server Error in 366.3ms
+  [1m[35m (9.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/peer_allies" for 127.0.0.1 at 2014-11-23 18:59:59 -0400
+Processing by PeerAlliesController#index as HTML
+Completed 500 Internal Server Error in 7.7ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 18:59:59 -0400
+Processing by PeerAlliesController#index as HTML
+Completed 500 Internal Server Error in 2.0ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 18:59:59 -0400
+Processing by PeerAlliesController#index as HTML
+Completed 500 Internal Server Error in 13.6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 18:59:59 -0400
+Processing by PeerAlliesController#index as HTML
+Completed 500 Internal Server Error in 40.0ms
+  [1m[35m (7.6ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (5.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ally_list" for 127.0.0.1 at 2014-11-23 19:15:28 -0400
+Processing by PeerAlliesController#ally_list as HTML
+Completed 500 Internal Server Error in 346.2ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/peer_allies" for 127.0.0.1 at 2014-11-23 19:15:29 -0400
+Processing by PeerAlliesController#index as HTML
+Completed 500 Internal Server Error in 2.5ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:15:29 -0400
+Processing by PeerAlliesController#index as HTML
+Completed 500 Internal Server Error in 2.5ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:15:29 -0400
+Processing by PeerAlliesController#index as HTML
+Completed 500 Internal Server Error in 1.9ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-11-23 19:15:29 -0400
+Processing by PeerAlliesController#index as HTML
+Completed 500 Internal Server Error in 7.8ms
+  [1m[35m (0.3ms)[0m  rollback transaction
