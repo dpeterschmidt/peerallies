@@ -1,40 +1,29 @@
 <body> 
   <div class = "container">
-    <h1 style = "text-align: center; font-size: 50px">Your Peer Allies</h1>
-    <% @peer_allies.each do |ally| %>
-    <div class="media">
-      <a class="media-left" href="#">
-        <img>
+    <h1 style = "text-align: center; font-size: 50px">Your Peer Allies</h1><br>
+    <div class="row">
+      <% @peer_allies.each do |ally| %>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img>
           <%= image_tag(ally.avatar.url(:thumb)) %>
         </img>
-      </a>
-      <div class="media-body">
-
-        <br>
-        Name: <%= ally.name %>
-        <br>
-        Grade: <%= ally.grade %>
-        <br>
-        Bio: <%= ally.bio %>
-        <br>
-        <br>
-        
+          <div class="caption">
+            <h3><%= ally.name %></h3>
+            <p>
+              Grade: <%= ally.grade %>
+              <br>
+              Bio: <%= ally.bio %>
+            </p>
+            <a href="#" class="btn btn-primary" role="button">View Profile</a> 
+          </div>
+        </div>
       </div>
+      <% end %>
     </div>
-    <% end %>
+    <br>
     <%= link_to 'Add new peer ally', new_peer_ally_path %>
-  </div>
 </body>
 
-    
 
-<!-- <div class="media">
-  <a class="media-left" href="#">
-    <img src="..." alt="...">
-  </a>
-  <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
-    ...
-  </div>
-</div>
- -->
+ 
