@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(:version => 20141123222303) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "ups_id"
+    t.string   "email"
+    t.string   "last_name"
+    t.string   "first_name"
+    t.string   "member_of"
   end
 
 end
