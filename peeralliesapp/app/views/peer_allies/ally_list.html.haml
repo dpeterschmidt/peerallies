@@ -1,4 +1,4 @@
-// %head= stylesheet_link_tag "ally_list"
+%head= stylesheet_link_tag "ally_list"
 %link{:href => "styles/main.css", :rel => "stylesheet", :type => "text/css"}
 / Latest compiled and minified CSS
 %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
@@ -28,7 +28,10 @@
 
   %br
   = link_to 'Add new peer ally', new_peer_ally_path
-  // :id => 'footer'
+  %br
+  // =link_to 'Login', '/auth/shibboleth'
+  - #render the login partial (chunk of html)
+  = render :partial=>'login'
 
 
 / Latest compiled and minified JavaScript
