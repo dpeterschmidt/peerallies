@@ -45,6 +45,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+# for authorization
+gem 'omniauth'
+gem 'rack-saml', '>= 0.1.1'
+gem 'omniauth-shibboleth'
+
 gem 'jquery-rails'
 gem 'haml'
 gem 'simple_form'
