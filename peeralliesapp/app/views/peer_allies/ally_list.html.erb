@@ -15,20 +15,16 @@
               <br>
               Bio: <%= ally.bio %>
             </p>
-            <a href="ally" class="btn btn-primary" role="button">View Profile</a> 
+            <a<%= link_to('', peer_ally_path(ally), html_options = {:class => "btn btn-primary", :role => "button" }) %></a> 
+            <%= link_to('View Profile', peer_ally_path(ally)) %>
           </div>
         </div>
       </div>
       <% end %>
     </div>
     <br>
-    <div class="btn btn-primary" role="button"><%= link_to 'Add New Peer Ally', new_peer_ally_path %></div> 
-      <%= link_to('Log in with your UPS account','/auth/shibboleth') %>
-    <%= form_tag(test_login_path) do %>
-      <%= label_tag(:user_id, "Login as user #:") %>
-      <%= number_field_tag(:user_id, in: 1.0..10.0, step: 1.0) %>
-      <%= submit_tag("Submit") %>
-    <% end %>
+    <div class="btn btn-primary" role="button"><%= link_to 'Add New Peer Ally', new_peer_ally_path, html_options = {:class => "btn btn-primary", :role => "button"} %></div> 
+      <!-- <%= link_to('Log in with your UPS account','/auth/shibboleth') %> -->
 </body>
 
 <%= render :partial=>'login' %>

@@ -1,14 +1,14 @@
 <div id="login">
 	<% if @current_user #logged in %>
 		<p>You are logged in as: 
-			<br>Name: <%= @current_user.full_name %>
-			<br>Login: <%= @current_user.name %>
+			<br>Name: <%= @current_user.name %>
+			<br>Login: <%= @current_user.ups_id %>
 			<br>Email: <%= @current_user.email %>
 			<br>Faculty: <%= @current_user.faculty? %>
 			<br>Student: <%= @current_user.student? %>
 		<p>
-		(<%= link_to('Log Out', logout_path) %>)
-		</p>
+		<%= link_to('Log Out', logout_path) %>
+<!-- 		</p>
 	<% else %>
 		<%= link_to('Log in with your UPS account','/auth/shibboleth') %>
 		<%= form_tag(test_login_path) do %>
@@ -16,5 +16,5 @@
 			<%= number_field_tag(:user_id, in: 1.0..10.0, step: 1.0) %>
   		<%= submit_tag("Submit") %>
 		<% end %>
-	<% end %>
+	<% end %> -->
 </div>
