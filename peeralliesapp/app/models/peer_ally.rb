@@ -3,7 +3,7 @@ class PeerAlly < ActiveRecord::Base
 
   attr_protected :uid, :provider #for omniauth authentication
 
-  validates :name, :bio, :grade, :presence => true #:message => "Please fill out all fields"
+  # validates :name, :bio, :grade, :presence => true #:message => "Please fill out all fields"
 
   has_attached_file :avatar, :styles => {:thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
 
