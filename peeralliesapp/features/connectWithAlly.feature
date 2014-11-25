@@ -6,7 +6,7 @@ Scenario: Connect with an ally
 	Given I am on the home page
 	When I follow "Connect With An Available Ally"
 	Then I should be on the email form page
-	When I follow "Send email to allies"
+	When I click "Send email to allies"
 	Then I should be on the conf yes page
 	When I follow "Okay"
 	Then I should be on the index page
