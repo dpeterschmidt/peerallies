@@ -1,0 +1,10 @@
+%h3 Email an Ally about setting up an appointment.
+
+= form_tag :email, :method => :email do
+	= text_field_tag "name", "Your name"
+	%br
+	= email_field_tag "email", "Your email address"
+	%br
+	= text_field_tag "message", "Your message to the allies"
+	%br
+	= submit_tag "Send"

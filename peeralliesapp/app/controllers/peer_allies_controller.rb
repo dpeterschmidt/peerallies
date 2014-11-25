@@ -104,20 +104,20 @@
     end
   end
 
+
+
   def email
-    # right now this just sends an email to a hardcoded email address
-    # which is actually the email I set up for this project: peeralliesups@gmail.com
-    # later functionality should include
 
-    # if you want to test the email functionality just change the hard-coded
-    # email address in app / mailers / ally_mailer.rb
-    # to an email you have access to
-    # at least until we get the form set up
+    # variables sent in via the form's HTTP request
+    name = params[:name]
+    email = params[:email]
+    message = params[:message]
 
-    AllyMailer.notification_email.deliver
+    # send email using the given parameters
+    # to notify an ally that a victim has requested help
+    AllyMailer.notification_email(name, email, message).deliver
 
-    # this is just so the route works for now
-    # this is a TEMPORARY SOLUTION as far as I know
+    # confirmation page
     redirect_to :conf_yes
     
   end
