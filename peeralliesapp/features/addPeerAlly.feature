@@ -3,11 +3,11 @@ Feature: As a peer ally
 	I want to add myself to the project
  
 Scenario: Add team member named Bob
-  Given I am on the ally list page
-  When I follow "new peer ally"
-  Then I should be on the new peer ally page
-  When I fill in "Name" with "Bob"
-  And I fill in "Bio" with "Bob's favorite class is software engineering"
-  And I click "Create Peer ally"
-  Then I should be on the peer allies page
-  	But I should see "Bob"
+  Given PENDING I am on the ally list page
+  When PENDING I follow "new peer ally"
+  Then PENDING I should be on the new peer ally page
+  When PENDING I fill in "Name" with "Bob"
+  And PENDING I fill in "Bio" with "Bob's favorite class is software engineering"
+  And PENDING I click "Create Peer ally"
+  Then PENDING I should be on the peer allies page
+  	But PENDING I should see "Bob"
