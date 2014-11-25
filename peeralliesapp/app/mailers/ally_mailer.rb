@@ -7,4 +7,9 @@ class AllyMailer < ActionMailer::Base
     mail from: email, body: body
   end
 
+  def confirmation_email(name, email)
+    body = "Hello, #{name}." + "\n" + "The Peer Allies have received your request, and will get in touch with you shortly."
+    mail to: email, from: "peerallies.pugetsound@gmail.com", body: body
+  end
+
 end

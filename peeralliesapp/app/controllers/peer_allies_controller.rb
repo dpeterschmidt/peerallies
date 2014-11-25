@@ -117,6 +117,11 @@
     # to notify an ally that a victim has requested help
     AllyMailer.notification_email(name, email, message).deliver
 
+    # send another email to the provided email address
+    # letting them know that the allies have received
+    # their request sent through the form
+    AllyMailer.confirmation_email(name, email).deliver
+
     # confirmation page
     redirect_to :conf_yes
     

@@ -1,10 +1,13 @@
-%h3 Email an Ally about setting up an appointment.
+%h3 Please fill out the information below, including as much information as you feel comfortable with, so that a peer ally can get in touch with you.
 
 = form_tag :email, :method => :email do
-	= text_field_tag "name", "Your name"
+	= text_field_tag "name", "Your name", :class => 'form-control'
 	%br
-	= email_field_tag "email", "Your email address"
 	%br
-	= text_field_tag "message", "Your message to the allies"
+	= email_field_tag "email", "Your email address", :class => 'form-control'
 	%br
-	= submit_tag "Send"
+	%br
+	= text_area_tag "message", "Your message to the allies", :class => 'form-control'
+	%br
+	%br
+	= submit_tag "Send email to allies", :class => "btn btn-primary btn-lg"
