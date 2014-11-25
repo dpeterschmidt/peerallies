@@ -8,7 +8,6 @@ Peeralliesapp::Application.routes.draw do
   match :ally_list, :to => 'peer_allies#ally_list'
   match :contact, :to => 'peer_allies#contact'
 
-  match :email, :to => 'peer_allies#email'
   match :calendar, :to => 'peer_allies#calendar'
 
   match :crisis_info, :to => 'peer_allies#crisis_info'
@@ -25,8 +24,11 @@ Peeralliesapp::Application.routes.draw do
 
   match :survey, :to => 'peer_allies#survey'
   
+  match :email_form, to: 'peer_allies#form'
 
   post "/peer_allies/new" => 'peer_allies#create'
+
+  match :email, :to => 'peer_allies#email'
 
 
   # routing for authentication
