@@ -2,40 +2,28 @@
   <div class="container">
     <div class="media">
       <a class="pull-left" href="ally">
-        <img class="media-object img-circle" src="<%= @peer_ally.avatar.url(:thumb) %>" style="width: 140px"/>
-        <!--/ %img.media-object.img-circle{:alt => "Name",:src => @peer_ally.avatar.url(:thumb) , :style => "width: 200px"}
+        <img class="img-circle" src="<%= @peer_ally.avatar.url(:thumb) %>" style="width: 140px"/>
+      <!--/ %img.media-object.img-circle{:alt => "Name",:src => @peer_ally.avatar.url(:thumb) , :style => "width: 200px"}
         -->
       </a>
       <div class="media-body">
-        <!-- There's probably a cleaner way to write the breaks so that name is centered horizontally with img
-        -->
         <br>
-            <br>
-              <h1 class="media-heading" style="font-size: 60px">
-                <%= @peer_ally.name %>
-              </h1>
-              <br>
-              <br>
-              <hr style = "width:200em; height:2px">
-              <br>
-                <br>
-                  <br>
-                    <h2>About Me</h2>
-                    <p>
-                      <%= @peer_ally.bio %>
-                    </p>
-                    <br>
-                      <h2>Grade</h2>
-                      <p>
-                        <%= @peer_ally.grade %>   
-                      </p>
-                    </br>
-                  </br>
-                </br>
-              </br>
-            </br>
-          </br>
-        </br>
+        <br>
+        <h1 class="media-heading" style="font-size: 60px">
+          <%= @peer_ally.name %>
+        </h1>
+        <hr style = "display:block; margin-top: 2em; margin-bottom: 2em; margin-left: auto; margin-right: auto; border-style: inset; border-width:1px;">
+        <h2>About Me</h2>
+        <p>
+          <%= @peer_ally.bio %>
+        </p>
+        <br>
+        <h2>Grade</h2>
+        <p>
+          <%= @peer_ally.grade %>   
+        </p>
+        <br>
+        <br>
       </div>
     </div>
     <%= link_to 'Edit', edit_peer_ally_path(@peer_ally) %>

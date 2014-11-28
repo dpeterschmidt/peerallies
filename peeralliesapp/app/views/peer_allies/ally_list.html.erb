@@ -1,11 +1,13 @@
 <body> 
   <div class = "container">
-    <h1 style = "text-align: center; font-size: 50px">Your Peer Allies</h1><br>
+    <div class = "jumbotron">
+    <h1 style = "text-align: center; font-size: 60px; color: #660000">Your Peer Allies</h1>
+    </div>
     <div class="row">
       <% @peer_allies.each do |ally| %>
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <img>
+          <img class = "img-circle">
           <%= image_tag(ally.avatar.url(:thumb)) %>
         </img>
           <div class="caption">
