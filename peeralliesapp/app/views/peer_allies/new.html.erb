@@ -1,0 +1,46 @@
+<body>
+  <div class = "container">
+  <%= form_for @peer_ally, url: {action: "create"} do |f| %>
+    <% if @peer_ally.errors.any? %>
+      <!-- Error message -->
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@peer_ally.errors.count, "error") %>
+          prohibited this peer_ally from being saved:
+        </h2>
+        <ul>
+          <% @peer_ally.errors.full_messages.each do |msg| %>
+            <li>
+              <%= msg %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+    <% end %>
+    <!-- form -->
+    <!-- <div class="actions"> -->
+    <%= f.label :name, 'Name', :id => "name" %>
+    <%= f.text_field :name %>
+    <br>
+    <br>
+    <%= f.label :bio, 'Biography' %>
+    <%= f.text_area :bio %>
+    <br>
+    <br>
+    <%= f.label :grade, 'Grade' %>
+    <%= f.select :grade, options_for_select(['Freshman', 'Sophomore','Junior', 'Senior']), include_blank: true %>
+    <br>
+    <br>
+    <%= f.label :avatar, 'Avatar Photo' %>
+    <%= f.file_field :avatar %>
+    <br>
+    <%= f.submit %>
+    <!-- </div> -->
+
+  <% end %>
+
+  </div>
+  <br>
+  <br>
+</body>
