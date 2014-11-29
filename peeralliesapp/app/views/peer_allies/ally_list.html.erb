@@ -1,33 +1,33 @@
 <body> 
   <div class = "container">
-    <div class = "jumbotron">
     <h1 style = "text-align: center; font-size: 60px; color: #660000">Your Peer Allies</h1>
-    </div>
+    <br>
     <div class="row">
       <% @peer_allies.each do |ally| %>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
+          <br>
           <img class = "img-circle">
-          <%= image_tag(ally.avatar.url(:thumb)) %>
-        </img>
+            <%= image_tag(ally.avatar.url(:thumb)) %>
+          </img>
           <div class="caption">
-            <h3><%= ally.name %></h3>
-            <p>
-              Grade: <%= ally.grade %>
-              <br>
+            <!-- Make font bigger. -->
+            <h2><%= ally.name %></h2>
+            <p style = "font-size: 15px;">
               Bio: <%= ally.bio %>
+              <br>
+              Grade: <%= ally.grade %>
             </p>
-            <a<%= link_to('', peer_ally_path(ally), html_options = {:class => "btn btn-primary", :role => "button" }) %></a> 
-            <%= link_to('View Profile', peer_ally_path(ally)) %>
+            <%= link_to 'View Profile', peer_ally_path(ally), html_options = {:class => "btn btn-primary"} %>
           </div>
         </div>
       </div>
       <% end %>
     </div>
     <br>
-    <div class="btn btn-primary" role="button"><%= link_to 'Add New Peer Ally', new_peer_ally_path, html_options = {:class => "btn btn-primary", :role => "button"} %></div> 
-      <!-- <%= link_to('Log in with your UPS account','/auth/shibboleth') %> -->
+      <%= link_to 'Add New Peer Ally', new_peer_ally_path, html_options = {:class => "btn btn-primary"} %>
+      <%= render :partial=>'login' %>
+<br>
+<br>
 </body>
-
-<%= render :partial=>'login' %>
 
