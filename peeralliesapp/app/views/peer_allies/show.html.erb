@@ -26,8 +26,11 @@
         <br>
       </div>
     </div>
-    <%= link_to 'Edit', edit_peer_ally_path(@peer_ally) %>
+    <%= link_to 'Edit', edit_peer_ally_path(@peer_ally), html_options = {:class => "btn btn-primary"} %>
+    <br>
+    <br>
     <%= button_to 'Delete', peer_ally_path(@peer_ally), :method => :delete, :confirm => 'Are you sure?' %>
-    <%= link_to 'Back to the list of Peer Allies', ally_list_path %>
+    <br>
+    <%= link_to 'Back to the list of Peer Allies', ally_list_path, html_options = {:class => "btn btn-primary"} %>
   </div>
 </body>
