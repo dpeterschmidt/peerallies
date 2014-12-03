@@ -8,8 +8,9 @@ class SessionsController < ApplicationController
     auth = request.env["omniauth.auth"]
     # user = PeerAlly.find_by_provider_and_uid(auth["provider"],auth["uid"]) || PeerAlly.create_with_omniauth(auth)
     if(PeerAlly.find_by_name(auth["info"]["name"]).nil?)
-        redirect_to index_path
-        flash[:notice] = 'Invalid Credentials.'
+      flash[:notice] =  'Invalid Credentials.'
+      #   redirect_to index_path
+      redirect_to index_path
     else
     user = PeerAlly.find_by_name(auth["info"]["name"]) 
     session[:user_id] = user.id
