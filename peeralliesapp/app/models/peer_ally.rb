@@ -1,7 +1,9 @@
 class PeerAlly < ActiveRecord::Base
   attr_accessible :name, :grade, :bio, :avatar, :ups_id, :email, :last_name, :first_name, :member_of #ups data fields
 
-  attr_protected :uid, :provider #for omniauth authentication
+  # attr_protected :uid, :provider #for omniauth authentication
+  # for testing!!
+  attr_accessible :uid, :provider
 
   # validates :name, :bio, :grade, :presence => true #:message => "Please fill out all fields"
 

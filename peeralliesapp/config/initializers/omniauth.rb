@@ -10,7 +10,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     ],
     :info_fields => {
       :uid => "sAMAccountName",
-      :ups_id => "sAMAccountName",
+      :name => "sAMAccountName",
       :email    => "mail",
       :last_name  => "surname",
       :first_name => "givenName",

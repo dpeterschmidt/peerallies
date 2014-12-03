@@ -56,7 +56,6 @@
   # POST /peer_allies
   # POST /peer_allies.json
   def create
-    # puts "*****************************************************************************"+PeerAlly.find(params[:peer_ally])
     @peer_ally = PeerAlly.new(params[:peer_ally])
 
     if @peer_ally.valid?
