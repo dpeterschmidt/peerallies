@@ -1,4 +1,4 @@
-
+<%= javascript_include_tag "application" %>
   <div class="container">
     <div class="media">
       <a class="pull-left" href="ally">
@@ -26,10 +26,12 @@
         <br>
       </div>
     </div>
-    <%= link_to 'Edit', edit_peer_ally_path(@peer_ally), html_options = {:class => "btn btn-primary"} %>
+    <% if @current_user && @current_user.name == @peer_ally.name %>
+      <%= link_to 'Edit', edit_peer_ally_path(@peer_ally), html_options = {:class => "btn btn-primary"} %>
     <br>
     <br>
-    <%= button_to 'Delete', peer_ally_path(@peer_ally), :method => :delete, :confirm => 'Are you sure?' %>
+    <%= button_to 'Delete', peer_ally_path(@peer_ally),:method => :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" %>
+    <% end %>
     <br>
     <%= link_to 'Back to the list of Peer Allies', ally_list_path, html_options = {:class => "btn btn-primary"} %>
   </div>

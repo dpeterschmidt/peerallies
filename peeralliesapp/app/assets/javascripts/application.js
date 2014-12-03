@@ -11,5 +11,6 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+// app/assets/javascript/application.js
 //= require jquery_ujs
 //= require_tree .
