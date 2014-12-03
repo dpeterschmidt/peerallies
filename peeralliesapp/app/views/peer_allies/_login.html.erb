@@ -2,10 +2,15 @@
 	<% if @current_user #logged in %>
 		<p>You are logged in as: 
 			<br>Name: <%= @current_user.name %>
+			<br>First Name: <%= @current_user.first_name %>
+			<br>Last Name: <%= @current_user.last_name %>
 			<br>Login: <%= @current_user.ups_id %>
 			<br>Email: <%= @current_user.email %>
-			<br>Faculty: <%= @current_user.faculty? %>
-			<br>Student: <%= @current_user.student? %>
+			<br>Bio: <%= @current_user.bio %>
+			<br>Session[:user_id]: <%= session[:user_id] %>
+			<br>CurrUser.id: <%= @current_user.id %>
+			<br>Testing: <%= session[:name] %>
+			<br>Testing: <%= session[:email] %>
 		<p>
 		<%= link_to('Log Out', logout_path) %>
 <!-- 		</p>
@@ -18,3 +23,4 @@
 		<% end %>
 	<% end %> -->
 </div>
+

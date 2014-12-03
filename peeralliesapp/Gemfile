@@ -37,7 +37,7 @@ end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
+  gem 'jquery-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -49,8 +49,6 @@ end
 gem 'omniauth'
 gem 'rack-saml', '>= 0.1.1'
 gem 'omniauth-shibboleth'
-
-gem 'jquery-rails'
 gem 'haml'
 gem 'simple_form'
 gem "paperclip", "~> 4.2"
