@@ -1,4 +1,3 @@
-<body> 
   <div class = "container">
     <h1 style = "text-align: center; font-size: 60px; color: #660000">Your Peer Allies</h1>
     <br>
@@ -7,9 +6,10 @@
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
           <br>
-          <img class = "img-circle">
-            <%= image_tag(ally.avatar.url(:thumb)) %>
-          </img>
+          
+            <img class = "img-circle">
+              <%= image_tag(ally.avatar.url(:thumb)) %>
+            </img>
           <div class="caption">
             <!-- Make font bigger. -->
             <h2><%= ally.name %></h2>
@@ -29,5 +29,4 @@
       <%= render :partial=>'login' %>
 <br>
 <br>
-</body>
 
