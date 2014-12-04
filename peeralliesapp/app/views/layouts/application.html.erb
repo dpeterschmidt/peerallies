@@ -46,9 +46,10 @@
      <% if flash[:notice] %>
     <banner class="notice"><font color = "red", style="font-weight:bold", font size="6"><%= flash[:notice] %></font></banner>
   <% end %>
+  <div class="main-page-content <%= controller.controller_name %>">
     <%= yield %>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </div>
+
   </body>
 </html>
 

@@ -9,3 +9,4 @@
 PeerAlly.create(name: 'Evan Carlin', bio: "Seeded developer Evan Carlin", ups_id: 'ecarlin', :administrator => true)
 #seed yourselves here
 
+PeerAlly.create(name: 'Daniel Peterschmidt', bio: "Seeded developer Daniel Peterschmidt", ups_id: 'dpeterschmidt', :administrator => true)
