@@ -1,6 +1,11 @@
   <div class = "container">
     <h1 style = "text-align: center; font-size: 60px; color: #660000">Your Peer Allies</h1>
     <br>
+    <% if @current_user && @current_user.administrator %>
+    <%= link_to 'Add New Peer Ally', new_peer_ally_path, html_options = {:class => "btn btn-primary"} %>
+    <% end %>
+    <br>
+    <br>
     <div class="row">
       <% @peer_allies.each do |ally| %>
       <div class="col-sm-6 col-md-3">
@@ -25,8 +30,6 @@
       <% end %>
     </div>
     <br>
-      <%= link_to 'Add New Peer Ally', new_peer_ally_path, html_options = {:class => "btn btn-primary"} %>
-      <%= link_to('Log in with your UPS account','/auth/shibboleth') %>
 <br>
 <br>
 

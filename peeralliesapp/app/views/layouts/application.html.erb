@@ -33,6 +33,13 @@
             <li><%= link_to 'Crisis Information', :information %></li>
             <li><%= link_to 'About', :about %></li>
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <% if(@current_user) %>
+            <li> <%= link_to('Log Out', logout_path) %></li>
+            <% else %>
+          <li class='navbar-right'><%= link_to('Log in','/auth/shibboleth') %></li>
+          <% end %>
+          </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
