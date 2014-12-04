@@ -37,7 +37,7 @@
             <% if(@current_user) %>
             <li> <%= link_to('Log Out', logout_path) %></li>
             <% else %>
-          <li class='navbar-right'><%= link_to('Log in','/auth/shibboleth') %></li>
+          <li class='navbar-right'><%= link_to('Log In','/auth/shibboleth') %></li>
           <% end %>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -46,9 +46,9 @@
      <% if flash[:notice] %>
     <banner class="notice"><font color = "red", style="font-weight:bold", font size="6"><%= flash[:notice] %></font></banner>
   <% end %>
-  <div class="main-page-content <%= controller.controller_name %>">
+  <!-- <div class="main-page-content <%= controller.controller_name %>"> -->
     <%= yield %>
-  </div>
+  <!-- </div> -->
 
   </body>
 </html>
