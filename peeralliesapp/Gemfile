@@ -15,7 +15,7 @@ end
 
 
 group :production do
-   gem 'pg'
+   # gem 'pg'
 end
 
 ### From textbook (http://pastebin.com/WniRS74X) ###
@@ -52,6 +52,10 @@ gem 'omniauth-shibboleth'
 gem 'haml'
 gem 'simple_form'
 gem "paperclip", "~> 4.2" #for avatar photos
+
+# bootstrap gems
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 
 
 
