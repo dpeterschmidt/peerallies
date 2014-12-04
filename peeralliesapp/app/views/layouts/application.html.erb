@@ -39,9 +39,10 @@
      <% if flash[:notice] %>
     <div class="notice"><%= flash[:notice] %></div>
   <% end %>
+  <div class="page-content <%= controller.controller_name %>">
     <%= yield %>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </div>
+
   </body>
 </html>
 
