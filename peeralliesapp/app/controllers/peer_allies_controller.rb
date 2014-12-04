@@ -82,7 +82,7 @@
 
     respond_to do |format|
       if @peer_ally.update_attributes(params[:peer_ally])
-        format.html { redirect_to @peer_ally, notice: 'Peer ally was successfully updated.' }
+        format.html { redirect_to @peer_ally, notice: 'Your profile was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
