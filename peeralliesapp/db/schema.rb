@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141123222303) do
+ActiveRecord::Schema.define(:version => 20141203225950) do
 
   create_table "peer_allies", :force => true do |t|
     t.string   "name"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20141123222303) do
     t.string   "last_name"
     t.string   "first_name"
     t.string   "member_of"
+    t.boolean  "administrator"
   end
 
 end

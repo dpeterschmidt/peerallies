@@ -6,4 +6,4 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-PeerAlly.create(name: 'Bob', grade: 'Sophmore', bio: "This is a seeded ally", avatar_file_name: "image.jpg", avatar_content_type: "image/jpeg")
+PeerAlly.create(name: 'Seed', grade: 'Sophmore', bio: "This is a seeded ally", ups_id: 'seed')

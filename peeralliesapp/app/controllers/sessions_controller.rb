@@ -6,27 +6,19 @@ class SessionsController < ApplicationController
   #login
   def create
     auth = request.env["omniauth.auth"]
-    # user = PeerAlly.find_by_provider_and_uid(auth["provider"],auth["uid"]) || PeerAlly.create_with_omniauth(auth)
-    if(PeerAlly.find_by_name(auth["info"]["name"]).nil?)
+    if(PeerAlly.find_by_ups_id(auth["info"]["name"]).nil?) #If the name(i.e. ecarlin) is not in the database then they can't login
       flash[:notice] =  'Invalid Credentials.'
-      #   redirect_to index_path
       redirect_to index_path
     else
-    user = PeerAlly.find_by_name(auth["info"]["name"]) 
-    session[:user_id] = user.id
+    user = PeerAlly.find_by_ups_id(auth["info"]["name"]) #The name is a PeerAlly and should be able to be logged in
+    session[:user_id] = user.id #set the user_id to track user throughout website
     redirect_to peer_ally_path(user) #where go to when logged in
     end
-
-
-    # user = PeerAlly.find_by_name(auth["info"]["name"]) 
-    # session[:user_id] = user.id
-    # # session[:name] = auth["info"]["name"]
-    # redirect_to peer_ally_path(user) #where go to when logged in
   end
 
   #logout
   def destroy
-    session.delete(:user_id)
+    session.delete(:user_id) #remove from session so they are no longer the current_user
     flash[:notice] = 'Logged out successfully.'
     redirect_to index_path #where to go to when logged out
   end

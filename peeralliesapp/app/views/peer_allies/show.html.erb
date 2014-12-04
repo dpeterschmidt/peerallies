@@ -26,7 +26,7 @@
         <br>
       </div>
     </div>
-    <% if @current_user && @current_user.name == @peer_ally.name %>
+    <% if @current_user && (@current_user.name == @peer_ally.name || @current_user.administrator) %>
       <%= link_to 'Edit', edit_peer_ally_path(@peer_ally), html_options = {:class => "btn btn-primary"} %>
     <br>
     <br>
