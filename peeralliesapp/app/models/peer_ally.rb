@@ -26,6 +26,11 @@ class PeerAlly < ActiveRecord::Base
   	member_of.downcase.include? "student"
   end
 
+  #Changes routing so the name of the ally is included when on their profile page
+  def to_param
+  "#{id}-#{name}"
+end
+
   # creates a new user from the given omniauth authorization
   # def self.create_with_omniauth(auth)
   #   user = PeerAlly.new(
