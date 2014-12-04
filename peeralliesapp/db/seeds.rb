@@ -6,4 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-PeerAlly.create(name: 'Seed', grade: 'Sophmore', bio: "This is a seeded ally", ups_id: 'seed')
+PeerAlly.create(name: 'Evan Carlin', bio: "Seeded developer Evan Carlin", ups_id: 'ecarlin', :administrator => true)
+#seed yourselves here
+
