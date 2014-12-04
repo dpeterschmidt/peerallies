@@ -24,6 +24,10 @@
               Grade: <%= ally.grade %>
             </p>
             <%= link_to 'View Profile', peer_ally_path(ally), html_options = {:class => "btn btn-primary"} %>
+            <% if @current_user %>
+            <%= link_to 'Edit', edit_peer_ally_path(ally), html_options = {:class => "btn btn-primary"} %>
+            <%= button_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" %>
+             <% end %>
           </div>
         </div>
       </div>
