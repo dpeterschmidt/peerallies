@@ -51,7 +51,7 @@ gem 'rack-saml', '>= 0.1.1'
 gem 'omniauth-shibboleth'
 gem 'haml'
 gem 'simple_form'
-gem "paperclip", "~> 4.2"
+gem "paperclip", "~> 4.2" #for avatar photos
 
 
 

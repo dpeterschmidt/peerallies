@@ -13,12 +13,12 @@
 			<br>Testing: <%= session[:email] %>
 		<p>
 		<%= link_to('Log Out', logout_path) %>
-<!-- 		</p>
+		</p>
 	<% else %>
 		<%= link_to('Log in with your UPS account','/auth/shibboleth') %>
 		<%= form_tag(test_login_path) do %>
-			<%= label_tag(:user_id, "Login as user #:") %>
-			<%= number_field_tag(:user_id, in: 1.0..10.0, step: 1.0) %>
+			<!-- <%= label_tag(:user_id, "Login as user #:") %> -->
+<!-- 			<%= number_field_tag(:user_id, in: 1.0..10.0, step: 1.0) %>
   		<%= submit_tag("Submit") %>
 		<% end %>
 	<% end %> -->

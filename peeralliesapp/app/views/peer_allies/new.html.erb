@@ -23,16 +23,12 @@
     <%= f.text_field :name %>
     <br>
     <br>
-    <%= f.label :bio, 'Biography' %>
-    <%= f.text_area :bio %>
+    <%= f.label :ups_id, 'UPS ID'%>
+    <%= f.text_field :ups_id %>
     <br>
     <br>
-    <%= f.label :grade, 'Grade' %>
-    <%= f.select :grade, options_for_select(['Freshman', 'Sophomore','Junior', 'Senior']), include_blank: true %>
-    <br>
-    <br>
-    <%= f.label :avatar, 'Avatar Photo' %>
-    <%= f.file_field :avatar %>
+    <%= f.label :administrator, 'Administrator?' %>
+    <%= f.select :administrator, [['No', false], ['Yes', true]] %>
     <br>
     <%= f.submit %>
     <!-- </div> -->
