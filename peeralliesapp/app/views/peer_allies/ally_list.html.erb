@@ -1,11 +1,6 @@
   <div class = "container">
     <h1 style = "text-align: center; font-size: 60px; color: #660000">Your Peer Allies</h1>
     <br>
-    <% if @current_user && @current_user.administrator %>
-    <%= link_to 'Add New Peer Ally', new_peer_ally_path, html_options = {:class => "btn btn-primary"} %>
-    <% end %>
-    <br>
-    <br>
     <div class="row">
       <% @peer_allies.each do |ally| %>
       <div class="col-sm-6 col-md-3">
@@ -23,16 +18,19 @@
               <br>
               Grade: <%= ally.grade %>
             </p>
-            <%= link_to 'View Profile', peer_ally_path(ally), html_options = {:class => "btn btn-primary"} %>
+            <%= link_to 'View Profile', peer_ally_path(ally), html_options = {:class => "btn btn-block btn-primary"} %>
             <% if @current_user %>
-            <%= link_to 'Edit', edit_peer_ally_path(ally), html_options = {:class => "btn btn-primary"} %>
-            <%= button_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" %>
+            <%= link_to 'Edit', edit_peer_ally_path(ally), html_options = {:class => "btn btn-block btn-primary"} %>
+            <%= button_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-block btn-primary" %>
              <% end %>
           </div>
         </div>
       </div>
       <% end %>
     </div>
+    <% if @current_user && @current_user.administrator %>
+    <%= link_to 'Add New Peer Ally', new_peer_ally_path, html_options = {:class => "btn btn-primary"} %>
+    <% end %>
     <br>
 <br>
 <br>
