@@ -1,40 +1,55 @@
-  <div class = "container">
+<div class = "container">
+  <h1>Create A New Ally</h1>
   <%= form_for @peer_ally, url: {action: "create"} do |f| %>
-    <% if @peer_ally.errors.any? %>
-      <!-- Error message -->
-      <div id="error_explanation">
-        <h2>
-          <%= pluralize(@peer_ally.errors.count, "error") %>
-          prohibited this peer_ally from being saved:
-        </h2>
-        <ul>
-          <% @peer_ally.errors.full_messages.each do |msg| %>
-            <li>
-              <%= msg %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-
-    <% end %>
-    <!-- form -->
-    <!-- <div class="actions"> -->
-    <%= f.label :name, 'Name', :id => "name" %>
-    <%= f.text_field :name %>
-    <br>
-    <br>
-    <%= f.label :ups_id, 'UPS ID'%>
-    <%= f.text_field :ups_id %>
-    <br>
-    <br>
-    <%= f.label :administrator, 'Administrator?' %>
-    <%= f.select :administrator, [['No', false], ['Yes', true]] %>
-    <br>
-    <%= f.submit %>
-    <!-- </div> -->
+  <% if @peer_ally.errors.any? %>
+    <!-- Error message -->
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@peer_ally.errors.count, "error") %>
+        prohibited this peer_ally from being saved:
+      </h2>
+      <ul>
+        <% @peer_ally.errors.full_messages.each do |msg| %>
+          <li>
+            <%= msg %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
 
   <% end %>
 
-  </div>
+  <!-- form -->
+  <!-- <div class="actions"> -->
+
+
+  <form role="form">
+    <div class="form-group">
+      <label for="name"> <%= f.label :name, 'Name:', :id => "name" %> </label>
+      <input type="email" class="form-control" id="name" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <label for="id"><%= f.label :ups_id, 'UPS ID:'%></label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter ID">
+    </div>
+  </form>
+
+  <%= f.label :name, 'Name', :id => "name" %>
+  <%= f.text_field :name %>
   <br>
   <br>
+  <%= f.label :ups_id, 'UPS ID'%>
+  <%= f.text_field :ups_id %>
+  <br>
+  <br>
+  <%= f.label :administrator, 'Administrator?' %>
+  <%= f.select :administrator, [['No', false], ['Yes', true]] %>
+  <br>
+  <%= f.submit class: "btn btn-primary" %>
+  <!-- </div> -->
+
+  <% end %>
+
+</div>
+<br>
+<br>

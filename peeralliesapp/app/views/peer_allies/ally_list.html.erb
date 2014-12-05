@@ -1,37 +1,42 @@
-  <div class = "container">
-    <h1 style = "text-align: center; font-size: 60px; color: #660000">Your Peer Allies</h1>
+<div class = "container">
+<h1 style = "text-align: center; font-size: 60px; color: #660000">Your Peer Allies</h1>
+<br>
+
+<div class="row">
+<% @peer_allies.each do |ally| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
     <br>
-    <div class="row">
-      <% @peer_allies.each do |ally| %>
-      <div class="col-sm-6 col-md-3">
-        <div class="thumbnail">
+    <!-- Ally card -->
+      <!-- Trying to get image to link. Almost there ruby code below. -->
+       <!-- link_to image_tag(ally.avatar.url(:thumb), peer_ally_path(ally))  -->
+      <img class = "img-circle">
+        <%= image_tag(ally.avatar.url(:thumb)) %>
+      </img>
+
+      <div class="caption">
+        <h2><%= ally.name %></h2>
+        <p style = "font-size: 15px;">
+          Bio: <%= ally.bio %>
           <br>
-          
-            <img class = "img-circle">
-              <%= image_tag(ally.avatar.url(:thumb)) %>
-            </img>
-          <div class="caption">
-            <!-- Make font bigger. -->
-            <h2><%= ally.name %></h2>
-            <p style = "font-size: 15px;">
-              Bio: <%= ally.bio %>
-              <br>
-              Grade: <%= ally.grade %>
-            </p>
-            <%= link_to 'View Profile', peer_ally_path(ally), html_options = {:class => "btn btn-block btn-primary"} %>
-            <% if @current_user %>
-            <%= link_to 'Edit', edit_peer_ally_path(ally), html_options = {:class => "btn btn-block btn-primary"} %>
-            <%= button_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-block btn-primary" %>
-             <% end %>
-          </div>
-        </div>
+          Grade: <%= ally.grade %>
+        </p>
+        <%= link_to 'View Profile', peer_ally_path(ally), html_options = {:class => "btn btn-block btn-primary"} %>
+        <% if @current_user %>
+        <%= link_to 'Edit', edit_peer_ally_path(ally), html_options = {:class => "btn btn-block btn-primary"} %>
+        <%= button_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-block btn-primary" %>
+         <% end %>
       </div>
-      <% end %>
     </div>
-    <% if @current_user && @current_user.administrator %>
-    <%= link_to 'Add New Peer Ally', new_peer_ally_path, html_options = {:class => "btn btn-primary"} %>
-    <% end %>
-    <br>
+  </div>
+<% end %>
+</div>
+
+<% if @current_user && @current_user.administrator %>
+<%= link_to 'Add New Peer Ally', new_peer_ally_path, html_options = {:class => "btn btn-primary"} %>
+<% end %>
+
+<br>
 <br>
 <br>
 

@@ -2,7 +2,7 @@
 @import "bootstrap";
 
 body {
-	background-color: #E0E0E0  ;
+	background-color: #E0E0E0;
 }
 
 h1 {
@@ -10,13 +10,23 @@ h1 {
 	text-align: center;
 }
 
-h2 {
-	text-align: center;
-}
+// h2 {
+// 	text-align: center;
+// }
 
 iframe {
 	margin: 0 auto; 
 	display: block;
+}
+
+hr {
+	// display:block; 
+	// margin-top: 2em; 
+	// margin-bottom: 2em; 
+	// margin-left: auto; 
+	// margin-right: auto; 
+	border-style: inset; 
+	border-width:1px;
 }
 
 .login {
