@@ -139,6 +139,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    pg (0.17.1)
     polyglot (0.3.5)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -256,6 +257,7 @@ DEPENDENCIES
   omniauth
   omniauth-shibboleth
   paperclip (~> 4.2)
+  pg
   rack-saml (>= 0.1.1)
   rails (= 3.2.18)
   rspec-rails
