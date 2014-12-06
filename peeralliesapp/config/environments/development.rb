@@ -13,8 +13,9 @@ Peeralliesapp::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp # we are using an smtp server
   config.action_mailer.perform_deliveries = true # and we want the emails to send for testing
-  config.action_mailer.raise_delivery_errors = true # and if there is an issue an error should raise
-  config.action_mailer.smtp_settings = { # mandrillapp account settings for sending emails
+  config.action_mailer.raise_delivery_errors = false # and if there is an issue an error should raise
+  config.action_mailer.smtp_settings = {
+    # mandrillapp account settings for sending emails
     :address => "smtp.mandrillapp.com",
     :port => 587,
     :user_name => "peeralliesups@gmail.com",
