@@ -7,6 +7,16 @@
     <%= csrf_meta_tags %>
   </head>
 
+ <script>
+//      $(function() {
+//         $('#nav li a').click(function() {
+//            $('#nav li').removeClass();
+//            $($(this).attr('href')).addClass('active');
+//         });
+//      });
+//   </script>
+
+
   <body>
 <!-- To do: -->
 <!-- Make transulcent, make subheadings bigger, different font, make login button look separate -->
@@ -27,13 +37,13 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li style = "font-size:27px; font-weight:bold;"> <%= link_to 'Peer Allies', :index %></li>
-            <li><%= link_to 'Allies', :ally_list %></li>
-            <li><%= link_to 'Calendar', :calendar %></li>
-            <li><%= link_to 'Crisis Information', :information %></li>
-            <li><%= link_to 'About', :about %></li>
+            <li class="ally_list"><a href="ally_list">Allies</a></li>
+            <li class="calendar"><a href="calendar">Calendar</a></li>
+            <li class="information"><a href="information">Crisis Information</a></li>
+            <li class="about"><a href="about">About</a></li>
           </ul>
           
-          <div class = "login">
+          <div class = "Peer Ally Login">
             <ul class="nav navbar-nav navbar-right">
               <% if(@current_user) %>
               <li> <%= link_to('Log Out', logout_path) %></li>
