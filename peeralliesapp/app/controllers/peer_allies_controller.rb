@@ -2,7 +2,7 @@
   # GET /peer_allies
   # GET /peer_allies.json
   def index
-    @peer_allies = PeerAlly.all
+    @peer_ally = PeerAlly.all
 
     # respond_to do |format|
     #   format.html # index.html.erb
@@ -21,7 +21,7 @@
   end
 
   def calendar
-    @peer_allies = PeerAlly.all
+    # @peer_allies = PeerAlly.all
 
   end
 
