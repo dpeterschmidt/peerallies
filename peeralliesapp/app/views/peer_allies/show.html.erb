@@ -31,6 +31,11 @@
     <br>
     <br>
     <%= button_to 'Delete', peer_ally_path(@peer_ally),:method => :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" %>
+    <script>
+    $(document).ready(function() {
+      alert('You were successfully logged in!');
+    });
+    </script>
     <% end %>
     <br>
     <%= link_to 'Back to the list of Peer Allies', ally_list_path, html_options = {:class => "btn btn-primary"} %>
