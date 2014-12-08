@@ -19,37 +19,24 @@
 
   <% end %>
 
-  <!-- form -->
-  <!-- <div class="actions"> -->
 
-
-  <form role="form">
+<form role="form">
     <div class="form-group">
-      <label for="name"> <%= f.label :name, 'Name:', :id => "name" %> </label>
-      <input type="email" class="form-control" id="name" placeholder="Enter name">
-    </div>
-    <div class="form-group">
-      <label for="id"><%= f.label :ups_id, 'UPS ID:'%></label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter ID">
-    </div>
-  </form>
-
-  <%= f.label :name, 'Name', :id => "name" %>
-  <%= f.text_field :name %>
-  <br>
-  <br>
+    <%= f.label :name, 'Name'%>
+    <%= f.text_field :name, class: "form-control", id: "name", placeholder: "Enter Name" %>
+  </div>
+  <div>
   <%= f.label :ups_id, 'UPS ID'%>
-  <%= f.text_field :ups_id %>
-  <br>
-  <br>
-  <%= f.label :administrator, 'Administrator?' %>
+  <%= f.text_field :ups_id, class: "form-control", id: "name", placeholder: "Enter UPS ID" %></input>
+</div>
+  <div>
+    <%= f.label :administrator, 'Administrator?' %>
   <%= f.select :administrator, [['No', false], ['Yes', true]] %>
-  <br>
+  </div>
+  <div>
   <%= f.submit class: "btn btn-primary" %>
+</div>
   <!-- </div> -->
 
   <% end %>
-
-</div>
-<br>
-<br>
+  </form>

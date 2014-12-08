@@ -32,7 +32,7 @@ GEM
     arel (3.0.3)
     autoprefixer-rails (4.0.1.1)
       execjs
-    bootstrap-sass (3.3.1.0)
+    bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
     builder (3.0.4)
     capybara (2.4.4)
@@ -244,7 +244,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
-  bootstrap-sass
+  bootstrap-sass (= 3.1.1.0)
   capybara
   coffee-rails (~> 3.2.1)
   cucumber-rails

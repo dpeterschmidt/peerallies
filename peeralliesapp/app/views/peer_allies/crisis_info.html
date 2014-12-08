@@ -1,9 +1,20 @@
     <div class="jumbotron">
       <div class="container">
-        <h1 class="media-heading" style="font-size: 60px; color: #660000; text-align: center"
+        <h1 class="media-heading" style="font-size: 60px; color: #660000; text-align: center">
         Crisis Information
     	</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p><a href="option" class="btn btn-danger btn-lg" role="button">I Agree</a></p>
+		
+	<div class="container" style="width: 50%; margin: 0 auto;">
+		<br>
+		<p>If you've read the above, and would still wish to pursue
+			contacting one of the peer allies on campus, then please
+			follow the link below.</p>
+		<br>
+		<%= link_to email_form_path, :class => 'btn btn-danger btn-lg' do%>
+		<%= "Proceed to connect with an ally"%>
+		<% end %>
+	</div>
+		
       </div>
     </div>

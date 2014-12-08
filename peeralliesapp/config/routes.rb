@@ -29,6 +29,8 @@ Peeralliesapp::Application.routes.draw do
   post "/peer_allies/new" => 'peer_allies#create'
 
   match :email, :to => 'peer_allies#email'
+  
+  match 'Crisi Information', :to => 'peer_allies#crisis_info'
 
 
   # routing for authentication

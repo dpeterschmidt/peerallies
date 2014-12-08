@@ -14,9 +14,9 @@ group :development, :test do
 end
 
 
-group :production do
-    gem 'pg'
- end
+# group :production do
+#    gem 'pg'
+# end
 
 ### From textbook (http://pastebin.com/WniRS74X) ###
 #For testing purposes
@@ -54,7 +54,8 @@ gem 'simple_form'
 gem "paperclip", "~> 4.2" #for avatar photos
 
 # bootstrap gems
-gem 'bootstrap-sass'
+#gem 'bootstrap-sass', ">= 3.2" 
+gem 'bootstrap-sass', "3.1.1.0"
 gem 'autoprefixer-rails'
 
 
