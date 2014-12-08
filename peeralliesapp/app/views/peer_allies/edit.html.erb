@@ -18,32 +18,29 @@
       </div>
 
     <% end %>
-    <!-- form -->
-    <!-- <div class="actions"> -->
-    <%= f.label :name, 'Name', :id => "name" %>
-    <%= f.text_field :name %>
-    <br>
-    <br>
-    <%= f.label :bio, 'Biography' %>
-    <%= f.text_area :bio %>
-    <br>
-    <br>
-    <%= f.label :grade, 'Grade' %>
-    <%= f.select :grade, options_for_select(['Freshman', 'Sophomore','Junior', 'Senior']), include_blank: true %>
-    <br>
-    <br>
-    <%= f.label :avatar, 'Avatar Photo' %>
-    <%= f.file_field :avatar %>
-    <br>
-    <%= f.submit %>
-    <!-- </div> -->
+    
 
-  <% end %>
-
+<form role="form">
+    <div class="form-group">
+      <div>
+    <%= f.label :name, 'Name'%>
+    <%= f.text_field :name, class: "form-control", id: "name", placeholder: "Enter Name" %>
   </div>
-  <br>
-  <br>
-</body>
-<!-- // = link_to 'Show', @peer_ally
-// // = link_to 'Back', ally_list_path
-// = link_to 'Back', peer_ally_path(@peer_ally) -->
+  <div>
+  <%= f.label :bio, 'Biography' %>
+  <%= f.text_area :bio, class: "form-control", id:"bio", placeholder: "Biographical Information" %>
+  </div>
+  <div>
+    <%= f.label :grade, 'Grade' %>
+    <%= f.select :grade, options_for_select(['Freshman', 'Sophomore','Junior', 'Senior'], class: "form-control", id: "grade") %>
+    <div>
+    <%= f.label :administrator, 'Administrator?' %>
+    <%= f.select :administrator, [['No', false], ['Yes', true]], class: "form-control", id: "administrator" %>
+  </div>
+  <div>
+  <%= f.submit class: "btn btn-primary" %>
+</div>
+  <!-- </div> -->
+  <% end %>
+  </form>
+
