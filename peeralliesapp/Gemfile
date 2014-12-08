@@ -51,7 +51,7 @@ gem 'rack-saml', '>= 0.1.1'
 gem 'omniauth-shibboleth'
 gem 'haml'
 gem 'simple_form'
-gem "paperclip", "~> 4.2" #for avatar photos
+gem "paperclip", "~> 4.2" #for avatar photos it is a depreciated version but newer version wouldn't work
 
 # bootstrap gems
 gem 'bootstrap-sass'
