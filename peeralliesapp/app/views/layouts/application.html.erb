@@ -58,7 +58,12 @@
     </nav>
 
     <% if flash[:notice] %>
-    <banner class="notice"><font color = "red", style="font-weight:bold", font size="6"><%= flash[:notice] %></font></banner>
+	<script>
+        $(document).ready(function() {
+          alert('<%= flash[:notice] %>');
+        });
+       </script>
+   <!-- <banner class="notice"><font color = "red", style="font-weight:bold", font size="6"><%= flash[:notice] %></font></banner> -->
     <% end %>
     <%= yield %>
 
