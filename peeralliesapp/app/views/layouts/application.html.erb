@@ -38,15 +38,15 @@
           <ul class="nav navbar-nav">
             <li style = "font-size:27px; font-weight:bold;"> <%= link_to 'Peer Allies', peer_allies_path %></li>
             <li class="ally_list"><a <%= link_to 'Allies', ally_list_path %></a></li>
-            <li class="calendar"><a href="calendar">Calendar</a></li>
-            <li class="information"><a href="/information">Crisis Information</a></li>
-            <li class="about"><a href="/about">About</a></li>
+            <li class="calendar"><a <%= link_to 'Calendar', calendar_path %></a></li>
+            <li class="information"><a <%= link_to 'Crisis Information', information_path %></a></li>
+            <li class="about"><a <%= link_to 'About', about_path %></a></li>
           </ul>
           
           <div class = "Peer Ally Login">
             <ul class="nav navbar-nav navbar-right">
               <% if(@current_user) %>
-              <li> <%= link_to('Log Out', logout_path) %></li>
+              <li class - "login"><a <%= link_to('Log Out', logout_path) %></a></li>
               <% else %>
               <li class='navbar-right'><%= link_to('Log In','/auth/shibboleth') %></li>
               <% end %>
