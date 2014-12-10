@@ -36,11 +36,13 @@
         <!-- Somehow get font color to color:#600000; -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li style = "font-size:27px; font-weight:bold;"> <%= link_to 'Peer Allies', peer_allies_path %></li>
-            <li class="ally_list"><a <%= link_to 'Allies', ally_list_path %></a></li>
-            <li class="calendar"><a <%= link_to 'Calendar', calendar_path %></a></li>
+            <li style = "font-size:27px; font-weight:bold; padding-top: 7px;"> <%= link_to 'Peer Allies', peer_allies_path %></li>
+            <div style="padding-top:10px;"></div>
+            <li class="ally_list"><a <%= link_to 'Allies', ally_list_path %></li>
+            <li class="calendar"><a <%= link_to 'Calendar', calendar_path %></li>
             <li class="information"><%= link_to 'Crisis Information', crisis_info_path%></li>
-            <li class="about"><a <%= link_to 'About', about_path %></a></li>
+            <li class="about"><a <%= link_to 'About', about_path %></li>
+
           </ul>
           
           <div class = "Peer Ally Login">
