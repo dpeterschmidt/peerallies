@@ -37,16 +37,15 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li style = "font-size:27px; font-weight:bold; padding-top: 7px;"> <%= link_to 'Peer Allies', peer_allies_path %></li>
-            <div style="padding-top:10px;"></div>
-            <li class="ally_list"><a <%= link_to 'Allies', ally_list_path %></li>
-            <li class="calendar"><a <%= link_to 'Calendar', calendar_path %></li>
-            <li class="information"><%= link_to 'Crisis Information', crisis_info_path%></li>
-            <li class="about"><a <%= link_to 'About', about_path %></li>
 
+            <li style="padding-top:15px;" class="ally_list"><a <%= link_to 'Allies', ally_list_path %></a></li>
+            <li style="padding-top:15px;" class="calendar"><a <%= link_to 'Calendar', calendar_path %></a></li>
+            <li style="padding-top:15px;"class="information"><%= link_to 'Crisis Information', crisis_info_path%></li>
+            <li style="padding-top:15px;"class="about"><a <%= link_to 'About', about_path %></a></li>
           </ul>
           
-          <div class = "Peer Ally Login">
-            <ul class="nav navbar-nav navbar-right">
+       <div class = "Peer Ally Login">
+            <ul style="padding-top:15px; font-size:12px;" class="nav navbar-nav navbar-right">
               <% if(@current_user) %>
               <li class - "login"><a <%= link_to('Log Out', logout_path) %></a></li>
               <% else %>
@@ -54,6 +53,7 @@
               <% end %>
             </ul>
           </div>
+
 
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

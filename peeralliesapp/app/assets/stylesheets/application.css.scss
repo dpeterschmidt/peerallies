@@ -31,7 +31,8 @@ hr {
 }
 
 .login {
-	padding-right: 27px;
+	padding-right: 14px;
+	font-size: .5em;
 }
 
 /* Styling when menu item is selected*/
@@ -42,7 +43,7 @@ body.information li.information,
 body.about li.about {
 color: black;
 text-decoration: underline;
-background: yellow;
+/*background: yellow;*/
 }
 
 /*Adjust Menu text color, (Garamond) font-family, (1.5em) font-size  */
@@ -51,7 +52,7 @@ background: yellow;
 .navbar .nav > li.current-menu-ancestor > a {
 display:        inline;
 color:          #600000;                        
-font-family:    Garamond;
+font-family:    Arial;
 font-size:      1.5em;
 padding:        5px 20px; 
 }
