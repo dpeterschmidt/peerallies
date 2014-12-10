@@ -10,4 +10,4 @@ else #development or test use normal config
 		:metadata => "#{Rails.root}/config/metadata.yml",
 		:attribute_map => "#{Rails.root}/config/attribute-map.yml"
 	}
-end
+end	
