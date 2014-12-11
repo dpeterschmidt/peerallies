@@ -13,7 +13,7 @@ class AllyMailer < ActionMailer::Base
     # auto includes the name in an opening sentence to introduce
     # the victim to the ally
     body = "Hi, my name is #{name}. " + "\n" + "\n" + message
-    mail from: email, body: body
+    mail from: email, body: body, to: "peerallies.pugetsound@gmail.com"
   end
 
   # this is the email from the peer allies to the victim
