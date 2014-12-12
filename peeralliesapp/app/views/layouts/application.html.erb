@@ -5,23 +5,19 @@
     <%= stylesheet_link_tag   "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
-    <!-- Want to use the Open Sans font -->
-    <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css"> -->
   </head>
 
  <script> 
- //     $(function() {
- //        $('#nav li a').click(function() {
- //           $('#nav li').removeClass();
- //           $($(this).attr('href')).addClass('active');
- //        });
- //     });
-  </script>
+      // $(function() {
+      //    $('#nav li a').click(function() {
+      //       $('#nav li').removeClass();
+      //       $($(this).attr('href')).addClass('active');
+      //    });
+      // });
+</script>
 
 
   <body>
-<!-- To do: -->
-<!-- Make translucent, make subheadings bigger, different font, make login button look separate -->
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,16 +45,14 @@
        <div class = "Peer Ally Login">
             <ul style="padding-top:15px; font-size:12px;" class="nav navbar-nav navbar-right">
               <% if(@current_user) %>
-              <li class - "login"><a <%= link_to('Log Out', logout_path) %></a></li>
-              <% else %>
-              <li class='navbar-right'><%= link_to('Peer Ally Log In','/auth/shibboleth') %></li>
+                <li class="login"> <%= link_to('Log Out', logout_path) %></li>
+                <% else %>
+                <li class="navbar-right"><%= link_to('Peer Ally Log In','/auth/shibboleth') %></li>
               <% end %>
             </ul>
           </div>
 
-
         </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
     </nav>
 
     <% if flash[:notice] %>
@@ -67,18 +61,9 @@
           alert('<%= flash[:notice] %>');
         });
        </script>
-   <!-- <banner class="notice"><font color = "red", style="font-weight:bold", font size="6"><%= flash[:notice] %></font></banner> -->
     <% end %>
     <%= yield %>
 
   </body>
 </html>
 
-
-<!-- Future example header code -->
-<!-- <ul class="nav nav-pills">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
-</ul>
- -->
