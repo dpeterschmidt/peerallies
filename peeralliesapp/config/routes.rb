@@ -31,6 +31,10 @@ Peeralliesapp::Application.routes.draw do
   match :email, :to => 'peer_allies#email'
   
   match 'Crisi Information', :to => 'peer_allies#crisis_info'
+  
+  match :email_this_ally, :to => 'peer_allies#email_this_ally'
+  
+  match :email_specific_ally, :to => 'peer_allies#email_specific_ally'
 
 
   # routing for authentication

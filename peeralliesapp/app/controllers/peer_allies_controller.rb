@@ -29,7 +29,6 @@
   # GET /peer_allies/1.json
   def show
     @peer_ally = PeerAlly.find(params[:id])
-
     # respond_to do |format|
     #   format.html # show.html.erb
     #   format.json { render json: @peer_ally }
@@ -102,8 +101,17 @@
       format.json { head :no_content }
     end
   end
-
-
+  
+  def email_this_ally
+    @email = params[:specific_email]
+    @name = params[:specific_name]
+  #   # @peer_ally = PeerAlly.find(params[:id])
+  #   # @peer_ally.email = @peer_ally.ups_id + "@pugetsound.edu"
+  #   respond_to do |format|
+  #     format.html { render partial: 'email_this_ally' }
+  #   end
+    render partial: 'email_this_ally', :locals => {:ally_email => @email, :ally_name => @name}
+  end
 
   def email
 
@@ -122,6 +130,27 @@
     AllyMailer.confirmation_email(name, email).deliver
 
     # confirmation page
+    redirect_to :conf_yes
+    
+  end
+  
+  def email_specific_ally
+    
+    # all of the victim info from the form
+    victim_name = params[:name]
+    victim_email = params[:email]
+    victim_message = params[:message]
+    
+    # the specific_ally to which the victim
+    # wishes to send an email
+    recipient_email = params[:ally_email]
+    
+    # deliver the victim's message to the intended ally
+    AllyMailer.specific_ally_email(victim_name, victim_email, victim_message, recipient_email).deliver
+    
+    # deliver a confirmation email to the victim
+    AllyMailer.confirmation_email(victim_name, victim_email).deliver
+    
     redirect_to :conf_yes
     
   end

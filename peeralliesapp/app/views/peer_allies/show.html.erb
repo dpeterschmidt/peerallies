@@ -38,5 +38,8 @@
     </script>
     <% end %>
     <br>
+	<%= link_to 'Email me', email_this_ally_path(@peer_ally, :specific_email => (@peer_ally.ups_id.to_s + "@pugetsound.edu"), :specific_name => (@peer_ally.name)), html_options = {:class => "btn btn-primary"}%>
+		<br>
+	<br>
     <%= link_to 'Back to the list of Peer Allies', ally_list_path, html_options = {:class => "btn btn-primary"} %>
   </div>

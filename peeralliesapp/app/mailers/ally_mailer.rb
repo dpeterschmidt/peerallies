@@ -28,5 +28,13 @@ class AllyMailer < ActionMailer::Base
     
     mail to: email, from: "peerallies.pugetsound@gmail.com", body: body
   end
+  
+  # this will be used when someone follows the path
+  # to a specific ally's page and wishes to email
+  # them directly rather than emailing the group in general
+  def specific_ally_email(name, email, message, recipient_ally)
+    body = "Hi, my name is #{name}." + "\n" + "\n" + message
+    mail to: recipient_ally, from: email, body: body
+  end
 
 end
