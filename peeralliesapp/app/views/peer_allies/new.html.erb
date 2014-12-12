@@ -34,6 +34,10 @@
   <%= f.select :administrator, [['No', false], ['Yes', true]] %>
   </div>
   <div>
+    <%= f.label :display, 'Would you like this profile to be displayed on the website?' %>
+  <%= f.select :display, [['Yes', true],['No', false]] %>
+  </div>
+  <div>
   <%= f.submit class: "btn btn-primary" %>
 </div>
   <!-- </div> -->

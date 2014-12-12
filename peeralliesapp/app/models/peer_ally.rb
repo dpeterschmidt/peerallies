@@ -1,5 +1,5 @@
 class PeerAlly < ActiveRecord::Base
-  attr_accessible :name, :grade, :bio, :avatar, :ups_id, :email, :last_name, :first_name, :member_of, :administrator #ups data fields
+  attr_accessible :name, :grade, :bio, :avatar, :display, :ups_id, :email, :last_name, :first_name, :member_of, :administrator #ups data fields
 
   attr_protected :uid, :provider #for omniauth authentication
 
