@@ -3,8 +3,8 @@
 
 
 body {
-	background-color: #E0E0E0;
-	font-family: Open Sans;
+	background-color: white;
+	/*font-family: Open Sans;*/
 }
 
 h1 {
@@ -26,6 +26,10 @@ img {
 	width: 100px;
 }
 
+.li {
+	padding-top:15px
+}
+
 .login {
 	padding-right: 14px;
 	font-size: .5em;
@@ -45,25 +49,22 @@ body.about li.about {
 .navbar .nav > li > a, .navbar .nav > li > a:first-letter,
 .navbar .nav > li.current-menu-item > a, 
 .navbar .nav > li.current-menu-ancestor > a {
-	display:        inline;
-	color:          #600000;                        
-	font-family:    Arial;
-	font-size:      1.5em;
-	padding:        5px 20px; 
+	display:inline;
+	color:#600000;                        
+	font-family:Arial;
+	font-size:1.5em;
+	padding:5px 20px; 
 }
 
 
 /* Color when mouse hovers */
 .navbar .nav > li > a:hover, .navbar .nav > li > a:hover:first-letter { 
-	color:          darkgrey;                      
-	text-shadow:    none;
+	color:darkgrey;                      
+	text-shadow:none;
 }
 
 .content {
 	position: absolute;
 }
-
-
-
 
 

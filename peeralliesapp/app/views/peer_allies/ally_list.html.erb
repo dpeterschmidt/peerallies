@@ -7,6 +7,7 @@
 
 <div class="card container">
 <% @peer_allies.each do |ally| %>
+<% if ally.display || (@current_user && @current_user.administrator) %> <!--Only display profiles are shown unleess admin is logged in, then all profiles displayed-->
   <div class="col-sm-6 col-md-4 center-block">
     <div class="thumbnail ">
     <br>
@@ -31,6 +32,7 @@
         <% if @current_user && (@current_user.name == ally.name || @current_user.administrator) %>
         <%= link_to 'Edit', edit_peer_ally_path(ally), class: "btn btn-block btn-primary" %>
         <%= link_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-block btn-primary" %>
+          <% end %>
           <% end %>
         </div>
         <br>
