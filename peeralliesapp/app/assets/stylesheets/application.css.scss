@@ -4,7 +4,7 @@
 
 body {
 	background-color: white;
-	font-family: Open Sans;
+	/*font-family: Open Sans;*/
 }
 
 h1 {
@@ -26,9 +26,9 @@ img {
 	width: 100px;
 }
 
-// .li {
-// 	padding-top:15px
-// }
+.li {
+	padding-top:15px
+}
 
 .login {
 	padding-right: 14px;
@@ -66,8 +66,5 @@ body.about li.about {
 .content {
 	position: absolute;
 }
-
-
-
 
 
