@@ -6,7 +6,7 @@
     <div id="error_explanation">
       <h2>
         <%= pluralize(@peer_ally.errors.count, "error") %>
-        prohibited this peer_ally from being saved:
+        prohibited this Peer Ally from being saved:
       </h2>
       <ul>
         <% @peer_ally.errors.full_messages.each do |msg| %>
@@ -26,8 +26,8 @@
     <%= f.text_field :name, class: "form-control", id: "name", placeholder: "Enter Name" %>
   </div>
   <div>
-  <%= f.label :ups_id, 'UPS ID'%>
-  <%= f.text_field :ups_id, class: "form-control", id: "name", placeholder: "Enter UPS ID" %></input>
+  <%= f.label :ups_id, 'UPS Username'%>
+  <%= f.text_field :ups_id, class: "form-control", id: "name", placeholder: "e.g. jsmith" %></input>
 </div>
   <div>
     <%= f.label :administrator, 'Administrator?' %>

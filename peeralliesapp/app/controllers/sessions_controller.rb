@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   #login
   def create
     auth = request.env["omniauth.auth"]
-    if(PeerAlly.find_by_ups_id(auth["info"]["name"]).nil?) #If the name(i.e. ecarlin) is not in the database then they can't login
+    if(PeerAlly.find_by_ups_id(auth["info"]["name"]).nil?) #If the name(i.e. jross) is not in the database then they can't login
       flash[:notice] =  'You must be a Peer Ally or an administrator to login.'
       redirect_to index_path
     else
