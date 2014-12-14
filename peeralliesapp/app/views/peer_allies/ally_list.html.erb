@@ -1,11 +1,18 @@
 <body class = "ally_list">
-
- <div class="jumbotron">
-<div class = "container">
-<h1 style = "text-align: center; font-size: 60px;">Your Peer Allies</h1>
-</div>
-</div>
 <br>
+<div class="container">
+<div class="container" style="width: 50%; margin: 0 auto;">
+    <h1>
+      Your Peer Allies
+    </h1>
+
+  
+  <br>
+  <p style = "text-align: center;">
+    Click on view profile to view more information about each Peer Ally and access the ability to email each ally individually.
+  </p>
+<br>
+</div>
 
 <div class="card container">
 <% @peer_allies.each do |ally| %>
@@ -23,27 +30,33 @@
       <div class="caption">
         <h2 style="text-align:center;"><%= ally.name %></h2>
         <p style = "font-size: 15px;">
-          Bio: <%= ally.bio %>
-          <br>
-          Grade: <%= ally.grade %>
         </p>
       </div>
 
         <div class = "card-actions">
-        <%= link_to 'View Profile', peer_ally_path(ally), class: "btn btn-block btn-primary" %>
+        <%= link_to 'View Profile', peer_ally_path(ally), class: "btn3 btn-group btn-group-justified btn-lg btn-info" %>
+        <br>
+        <!-- Edit Button -->
         <% if @current_user && (@current_user.name == ally.name || @current_user.administrator) %>
-        <%= link_to 'Edit', edit_peer_ally_path(ally), class: "btn btn-block btn-primary" %>
-        <%= link_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-block btn-primary" %>
+
+        <div class = "col-md-6">
+        <%= link_to 'Edit', edit_peer_ally_path(ally), class: "btn3 btn-group btn-group-justified" %>
+        </div>
+
+        <!-- Delete Button -->
+        <div class = "col-md-6">
+        <%= link_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, class: "btn3 btn-group btn-group-justified" %>
+        </div>
+<br><br><br>
           <% end %>
           <% end %>
         </div>
-        <br>
      </div>
   </div>
 <% end %>
 </div>
 <% if @current_user && @current_user.administrator %>
-<%= link_to 'Add New Peer Ally', new_peer_ally_path, class: "btn btn-primary" %>
+<%= link_to 'Add New Peer Ally', new_peer_ally_path, class: "btn3 btn-group btn-group-justified" %>
 <% end %>
-<body>
+</body>
 
