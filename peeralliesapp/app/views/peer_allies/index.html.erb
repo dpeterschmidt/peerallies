@@ -1,26 +1,32 @@
 <div class="container">
-  <div class="container" style="width: 75%; margin: 0 auto;">
+  <!-- <div class="container" style="width: 75%; margin: 0 auto;"> -->
         
-    <div class = "title">PEER ALLIES</div>
+    <div class = "title">
+        PEER ALLIES
+    </div>
     <h3>We are a support network of students that hold weekly "office hours" to provide an opportunity for survivors of sexual violence or harassment who may have felt powerless to talk, be heard, and be believed, as well as provide information to survivors in a safe space about other resources both on and off campus.</h3>
 
     <br>
     <br>
 
-    <%= link_to crisis_info_path, class: 'btn btn-group btn-group-justified btn-lg btn-info', role: 'group' do%>
-    <%= "Connect with an Ally"%>
-    <% end %>
+    <div class = "col-md-6">
+        <%= link_to crisis_info_path, class: 'btn btn-group btn-group-justified btn-lg btn-info', role: 'group' do%>
+        <%= "Connect With An Ally"%>
+        <% end %>
 
-    <%= link_to calendar_path, class: 'btn btn-group btn-group-justified btn-lg btn-info' do%>
-    <%= "View the Allies' Calendar"%>
-    <% end %>
+        <br>
+        
+        <p>Each of the allies currently holds an office hour every week.  If, however, you would like to set up a meeting with an ally that doesn't fall within one of the available office hours, please click on the button above.</p>
+        
+    </div>
 
-    <p>Each of the allies currently holds an office hour every week.  If, however, you would like to set up a meeting with an ally that doesn't fall within one of the available office hours, please click on the button below.</p>
-    
-    <br>
-    <br>
-    
-    <p>If you would like to look at the weekly calendar to see which allies are available during official office hours, please click below.</p>  
-    
-  </div>
+    <div class = "col-md-6">
+        <%= link_to calendar_path, class: 'btn btn-group btn-group-justified btn-lg btn-info', role: 'group' do%>
+        <%= "View The Ally Calendar"%>
+        <% end %>
+
+        <br>
+        
+        <p>If you would like to look at the weekly calendar to see which allies are available during official office hours, please click below.</p>  
+    </div>
 </div>

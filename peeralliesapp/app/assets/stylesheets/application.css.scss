@@ -67,3 +67,23 @@ body.about li.about {
 	text-align: center;
 	font-size: 100px;
 }
+
+.btn {
+  // border-radius: 9px;
+  color: #ffffff;
+  font-size: 30px;
+  background: #3498db;
+  padding: 40px 22px 40px 22px;
+  text-decoration: none;
+}
+
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
