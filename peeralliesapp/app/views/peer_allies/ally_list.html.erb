@@ -19,7 +19,7 @@
   <br>
 
 <% @peer_allies.each do |ally| %>
-<% if ally.display || (@current_user && @current_user.administrator) %> <!--Only display profiles are shown unleess admin is logged in, then all profiles displayed-->
+  <% if ally.display || (@current_user && @current_user.administrator) %> <!--Only display profiles are shown unleess admin is logged in, then all profiles displayed-->
   <div class="col-sm-6 col-md-4 center-block">
     <div class="thumbnail">
     <br>
