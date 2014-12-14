@@ -33,13 +33,10 @@
   <div>
     <%= f.label :grade, 'Grade' %>
     <%= f.select :grade, options_for_select(['Freshman', 'Sophomore','Junior', 'Senior'], class: "form-control", id: "grade") %>
-  <div>
+  </div>
   <div>
     <%= f.label :avatar, 'Avatar Photo' %>
     <%= f.file_field :avatar, class: "form-control", id: "avatar" %>
-  </div>
-    <%= f.label :administrator, 'Administrator?' %>
-    <%= f.select :administrator, [['No', false], ['Yes', true]], class: "form-control", id: "administrator" %>
   </div>
   <div>
   <%= f.submit class: "btn btn-primary" %>
