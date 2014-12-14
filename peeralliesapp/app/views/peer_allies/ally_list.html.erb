@@ -30,12 +30,19 @@
 
         <div class = "card-actions">
         <%= link_to 'View Profile', peer_ally_path(ally), class: "btn3 btn-group btn-group-justified btn-lg btn-info" %>
+        <br>
         <!-- Edit Button -->
         <% if @current_user && (@current_user.name == ally.name || @current_user.administrator) %>
-        <%= link_to 'Edit', edit_peer_ally_path(ally), class: "btn3 btn-group btn-group-justified" %>
-        <!-- Delete Button -->
-        <%= link_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, class: "btn3 btn-group btn-group-justified" %>
 
+        <div class = "col-md-6">
+        <%= link_to 'Edit', edit_peer_ally_path(ally), class: "btn3 btn-group btn-group-justified" %>
+        </div>
+
+        <!-- Delete Button -->
+        <div class = "col-md-6">
+        <%= link_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, class: "btn3 btn-group btn-group-justified" %>
+        </div>
+<br><br><br>
           <% end %>
           <% end %>
         </div>
