@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-	color: #13E6E6;
+	color: #3498db;
 	text-align: center;
 }
 
@@ -32,11 +32,10 @@ body.ally_list li.ally_list,
 body.calendar li.calendar, 
 body.information li.information, 
 body.about li.about {
-	font-color: darkgrey;
 	text-decoration: underline;
 }
 
-/*Adjust Menu text color, (Garamond) font-family, (1.5em) font-size  */
+/*Adjust Menu text color, font-family, (1.5em) font-size  */
 .navbar .nav > li > a, .navbar .nav > li > a:first-letter,
 .navbar .nav > li.current-menu-item > a, 
 .navbar .nav > li.current-menu-ancestor > a {
@@ -44,14 +43,14 @@ body.about li.about {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size:1.5em;
 	padding:5px 20px; 
-	font-color:#13E6E6;
+	color: #3498db;
 
 }
 
 
 /* Color when mouse hovers */
 .navbar .nav > li > a:hover, .navbar .nav > li > a:hover:first-letter { 
-	color:darkgrey;                      
+	color: darkgrey;                      
 	text-shadow:none;
 }
 
