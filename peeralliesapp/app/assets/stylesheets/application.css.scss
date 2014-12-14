@@ -3,7 +3,7 @@
 
 
 body {
-	background-color: #EFFFFF;
+	background-color: white;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -40,11 +40,12 @@ body.about li.about {
 .navbar .nav > li > a, .navbar .nav > li > a:first-letter,
 .navbar .nav > li.current-menu-item > a, 
 .navbar .nav > li.current-menu-ancestor > a {
-	display:inline;
-	color: grey;                        
-	font-family:Arial;
+	display:inline;                        
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size:1.5em;
 	padding:5px 20px; 
+	font-color:#13E6E6;
+
 }
 
 
