@@ -35,6 +35,8 @@ Peeralliesapp::Application.routes.draw do
   match :email_this_ally, :to => 'peer_allies#email_this_ally'
   
   match :email_specific_ally, :to => 'peer_allies#email_specific_ally'
+  
+  match :before_you_continue, :to => 'peer_allies#before_you_continue'
 
 
   # routing for authentication
