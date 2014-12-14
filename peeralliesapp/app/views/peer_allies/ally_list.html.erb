@@ -30,20 +30,22 @@
       </div>
 
         <div class = "card-actions">
-        <%= link_to 'View Profile', peer_ally_path(ally), class: "btn btn-block btn-primary" %>
+        <%= link_to 'View Profile', peer_ally_path(ally), class: "btn3 btn-group btn-group-justified btn-lg btn-info" %>
+        <!-- Edit Button -->
         <% if @current_user && (@current_user.name == ally.name || @current_user.administrator) %>
-        <%= link_to 'Edit', edit_peer_ally_path(ally), class: "btn btn-block btn-primary" %>
-        <%= link_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-block btn-primary" %>
+        <%= link_to 'Edit', edit_peer_ally_path(ally), class: "btn3 btn-group btn-group-justified" %>
+        <!-- Delete Button -->
+        <%= link_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, class: "btn3 btn-group btn-group-justified" %>
+
           <% end %>
           <% end %>
         </div>
-        <br>
      </div>
   </div>
 <% end %>
 </div>
 <% if @current_user && @current_user.administrator %>
-<%= link_to 'Add New Peer Ally', new_peer_ally_path, class: "btn btn-primary" %>
+<%= link_to 'Add New Peer Ally', new_peer_ally_path, class: "btn3 btn-group btn-group-justified" %>
 <% end %>
 <body>
 

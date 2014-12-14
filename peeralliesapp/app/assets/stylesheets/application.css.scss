@@ -69,7 +69,6 @@ body.about li.about {
 }
 
 .btn2 {
-  // border-radius: 9px;
   color: #ffffff;
   font-size: 30px;
   background: #3498db;
@@ -78,8 +77,30 @@ body.about li.about {
   text-align: center;
 }
 
-
 .btn2:hover {
   background: #2b7fb3;
   text-decoration: none;
 }
+
+.btn3 {
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 25px;
+  background: #3498db;
+  padding: 20px 15px 20px 15px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn3:hover {
+  background: #2b7fb3;
+  text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+
+
+
