@@ -39,15 +39,15 @@
   def update
     @peer_ally = PeerAlly.find(params[:id])
 
-    # respond_to do |format|
-    #   if @peer_ally.update_attributes(params[:peer_ally])
-    #     format.html { redirect_to @peer_ally, notice: 'Your profile was successfully updated.' }
-    #     format.json { head :no_content }
-    #   else
-    #     format.html { render action: "edit" }
-    #     format.json { render json: @peer_ally.errors, status: :unprocessable_entity }
-    #   end
-    # end
+    respond_to do |format|
+      if @peer_ally.update_attributes(params[:peer_ally])
+        format.html { redirect_to @peer_ally, notice: 'Your profile was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @peer_ally.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def destroy
