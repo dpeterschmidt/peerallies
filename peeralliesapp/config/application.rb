@@ -60,6 +60,6 @@ module Peeralliesapp
     config.assets.version = '1.0'
 
     # ADDED BY BETH TO HELP WITH HEROKU APP
-    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = true
   end
 end
