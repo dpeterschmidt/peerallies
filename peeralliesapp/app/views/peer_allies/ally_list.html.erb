@@ -1,9 +1,21 @@
 <body class = "ally_list">
 <br>
- <h1>
+<div class="container">
+<div class="container" style="width: 50%; margin: 0 auto;">
+    <h1>
       Your Peer Allies
     </h1>
+<<<<<<< HEAD
+=======
+
+  
+  <br>
+  <p style = "text-align: center;">
+    Click on view profile to view more information about each Peer Ally and access the ability to email each ally individually.
+  </p>
+>>>>>>> a973ec86c39fdb48f3522e52c1217cff255efa65
 <br>
+</div>
 
 <div class="card container">
   <% if @current_user && @current_user.administrator %>
@@ -26,9 +38,6 @@
       <div class="caption">
         <h2 style="text-align:center;"><%= ally.name %></h2>
         <p style = "font-size: 15px;">
-          Bio: <%= ally.bio %>
-          <br>
-          Grade: <%= ally.grade %>
         </p>
       </div>
 
