@@ -5,7 +5,7 @@
   end
 
   def ally_list
-    @peer_allies = PeerAlly.order(:name) #Display allies in alphabetical order
+    @peer_allies = PeerAlly.all 
   end
 
   def calendar
