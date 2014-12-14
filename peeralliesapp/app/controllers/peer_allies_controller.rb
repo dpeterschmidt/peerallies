@@ -5,7 +5,7 @@
   end
 
   def ally_list
-    @peer_allies = PeerAlly.all
+    @peer_allies = PeerAlly.order(:name) #Display allies in alphabetical order
   end
 
   def calendar
@@ -39,36 +39,38 @@
   def update
     @peer_ally = PeerAlly.find(params[:id])
 
-    respond_to do |format|
-      if @peer_ally.update_attributes(params[:peer_ally])
-        format.html { redirect_to @peer_ally, notice: 'Your profile was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @peer_ally.errors, status: :unprocessable_entity }
-      end
-    end
+    # respond_to do |format|
+    #   if @peer_ally.update_attributes(params[:peer_ally])
+    #     format.html { redirect_to @peer_ally, notice: 'Your profile was successfully updated.' }
+    #     format.json { head :no_content }
+    #   else
+    #     format.html { render action: "edit" }
+    #     format.json { render json: @peer_ally.errors, status: :unprocessable_entity }
+    #   end
+    # end
   end
 
   def destroy
     @peer_ally = PeerAlly.find(params[:id])
     @peer_ally.destroy
+    redirect_to ally_list_path
 
-    respond_to do |format|
-      format.html { redirect_to peer_allies_url }
-      format.json { head :no_content }
-    end
+    # respond_to do |format|
+    #   format.html { redirect_to ally_list }
+    #   format.json { head :no_content }
+    # end
   end
   
   def email_this_ally
     @email = params[:specific_email]
     @name = params[:specific_name]
-  #   # @peer_ally = PeerAlly.find(params[:id])
+    render partial: 'email_this_ally', :locals => {:ally_email => @email, :ally_name => @name}
+
+     #   # @peer_ally = PeerAlly.find(params[:id])
   #   # @peer_ally.email = @peer_ally.ups_id + "@pugetsound.edu"
   #   respond_to do |format|
   #     format.html { render partial: 'email_this_ally' }
   #   end
-    render partial: 'email_this_ally', :locals => {:ally_email => @email, :ally_name => @name}
   end
 
   def email
