@@ -31,11 +31,6 @@
     <br>
     <br>
     <%= button_to 'Delete', peer_ally_path(@peer_ally),:method => :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" %>
-    <script>
-    $(document).ready(function() {
-      alert('You were successfully logged in!');
-    });
-    </script>
     <% end %>
     <br>
 	<%= link_to 'Email me', email_this_ally_path(@peer_ally, :specific_email => (@peer_ally.ups_id.to_s + "@pugetsound.edu"), :specific_name => (@peer_ally.name)), html_options = {:class => "btn btn-primary"}%>
