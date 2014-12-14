@@ -7,16 +7,6 @@
     <%= csrf_meta_tags %>
   </head>
 
- <script> 
-      // $(function() {
-      //    $('#nav li a').click(function() {
-      //       $('#nav li').removeClass();
-      //       $($(this).attr('href')).addClass('active');
-      //    });
-      // });
-</script>
-
-
   <body>
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
@@ -27,9 +17,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
         </div>
-       </div>
+       
 
         <!-- Somehow get font color to color:#600000; -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -42,6 +31,8 @@
             <li style="padding-top:15px;" class="about"> <%= link_to 'About', about_path %> </li>
           </ul>
           
+
+
        <div class = "Peer Ally Login">
             <ul style="padding-top:15px; font-size:10px;" class="nav navbar-nav navbar-right">
               <% if(@current_user) %>
