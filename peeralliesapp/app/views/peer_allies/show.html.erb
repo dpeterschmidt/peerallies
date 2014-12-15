@@ -1,40 +1,57 @@
 <%= javascript_include_tag "application" %>
+
   <div class="container">
     <div class="media">
+      
       <a class="pull-left" href="ally">
         <img class="img-circle" src="<%= @peer_ally.avatar.url(:thumb) %>" style="width: 140px"/>
-      <!--/ %img.media-object.img-circle{:alt => "Name",:src => @peer_ally.avatar.url(:thumb) , :style => "width: 200px"}
-        -->
       </a>
+
       <div class="media-body">
+        
         <br>
         <br>
+
         <h1 class="media-heading" style="font-size: 60px">
           <%= @peer_ally.name %>
         </h1>
+
+        <!-- Line -->
         <hr>
+
         <h2>About Me</h2>
         <p>
           <%= @peer_ally.bio %>
         </p>
+
         <br>
+        
         <h2>Grade</h2>
         <p>
           <%= @peer_ally.grade %>   
         </p>
+        
         <br>
         <br>
+
       </div>
-    </div>
+    </div> <!-- end of media div -->
+    
     <% if @current_user && (@current_user.name == @peer_ally.name || @current_user.administrator) %>
       <%= link_to 'Edit', edit_peer_ally_path(@peer_ally), html_options = {:class => "btn btn-primary"} %>
+    
     <br>
     <br>
+    
     <%= button_to 'Delete', peer_ally_path(@peer_ally),:method => :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" %>
     <% end %>
+    
     <br>
-	<%= link_to 'Email me', email_this_ally_path(@peer_ally, :specific_email => (@peer_ally.ups_id.to_s + "@pugetsound.edu"), :specific_name => (@peer_ally.name)), html_options = {:class => "btn btn-primary"}%>
-		<br>
-	<br>
+	   <%= link_to 'Email me', email_this_ally_path(@peer_ally, :specific_email => (@peer_ally.ups_id.to_s + "@pugetsound.edu"), :specific_name => (@peer_ally.name)), html_options = {:class => "btn btn-primary"}%>
+		
+    <br>
+    <br>
+
     <%= link_to 'Back to the list of Peer Allies', ally_list_path, html_options = {:class => "btn btn-primary"} %>
+  
   </div>
