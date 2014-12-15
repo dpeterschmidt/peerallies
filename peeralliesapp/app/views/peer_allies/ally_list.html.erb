@@ -16,49 +16,51 @@
   <% if @current_user && @current_user.administrator %>
   <%= link_to 'Add New Peer Ally', new_peer_ally_path, class: "btn3 btn-group btn-group-justified" %>
   <% end %>
+  
   <br>
 
-    <% @peer_allies.each do |ally| %>
-    <% if ally.display || (@current_user && @current_user.administrator) %> <!--Only display profiles are shown unleess admin is logged in, then all profiles displayed-->
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail" style = "background-color: #E8E8E8;">
-        <br>
-        <!-- Ally card -->
-          <!-- Trying to get image to link. Almost there ruby code below. -->
-           <!-- link_to image_tag(ally.avatar.url(:thumb), peer_ally_path(ally))  -->
-          <img class = "card-heading image">
-            <%= image_tag(ally.avatar.url(:thumb)) %>
-          </img>
+  <% @peer_allies.each do |ally| %>
+  <% if ally.display || (@current_user && @current_user.administrator) %> <!--Only display profiles are shown unleess admin is logged in, then all profiles displayed-->
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail" style = "background-color: #E8E8E8;">
+      <br>
+      <!-- Ally card -->
+      <!-- Trying to get image to link. Almost there ruby code below. -->
+      <!-- link_to image_tag(ally.avatar.url(:thumb), peer_ally_path(ally))  -->
+      <img class = "card-heading image">
+        <%= image_tag(ally.avatar.url(:thumb)) %>
+      </img>
 
-          <div class="caption">
-            <h2 style="text-align:center;"><%= ally.name %></h2>
-          </div>
-
-            <div class = "card-actions">
-            <%= link_to 'View Profile', peer_ally_path(ally), class: "btn3 btn-group btn-group-justified btn-lg btn-info" %>
-            <br>
-            <!-- Edit Button -->
-            <% if @current_user && (@current_user.name == ally.name || @current_user.administrator) %>
-
-            <div class = "col-md-6">
-            <%= link_to 'Edit', edit_peer_ally_path(ally), class: "btn3 btn-group btn-group-justified" %>
-            </div>
-
-            <!-- Delete Button -->
-            <div class = "col-md-6">
-            <%= link_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, class: "btn3 btn-group btn-group-justified" %>
-            </div>
-            <br><br><br>
-              <% end %>
-              <% end %>
-            </div>
-         </div>
+      <div class="caption">
+        <h2 style="text-align:center;"><%= ally.name %></h2>
       </div>
-    <% end %>
 
+      <div class = "card-actions">
+        <%= link_to 'View Profile', peer_ally_path(ally), class: "btn3 btn-group btn-group-justified btn-lg btn-info" %>
+        
+        <br>
+        
+        <!-- Edit Button -->
+        <% if @current_user && (@current_user.name == ally.name || @current_user.administrator) %>
 
+        <div class = "col-md-6">
+          <%= link_to 'Edit', edit_peer_ally_path(ally), class: "btn3 btn-group btn-group-justified" %>
+        </div>
+
+        <!-- Delete Button -->
+        <div class = "col-md-6">
+          <%= link_to 'Delete', peer_ally_path(ally),:method => :delete, data: { confirm: 'Are you sure?' }, class: "btn3 btn-group btn-group-justified" %>
+        </div>
+        
+        <br><br><br>
+        
+        <% end %>
+        <% end %>
+      </div>
+     </div>
+    </div>
+  <% end %>
 
 </div>
-
 </body>
 
