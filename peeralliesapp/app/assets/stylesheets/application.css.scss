@@ -110,9 +110,15 @@ body.about li.about {
 	color:#fff;
 	line-height:100px;
 	text-align:center;
-	background:#000;
-	margin: auto 0;
+	background-color:#3498db;
 	padding-top: 40px;
+	position: absolute;
+	/*margin-left: auto;
+    margin-right: auto;*/
+}
+
+.tpadding {
+	padding-left: 330px;
 }
 
 
