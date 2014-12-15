@@ -1,11 +1,9 @@
 <body class = "ally_list">
-<!-- <div class="container"> -->
-  <!-- <div class="container" style="width: 50%; margin: 0 auto;"> -->
     <h1>
       Your Peer Allies
     </h1>
 
-    <p style = "text-align: center;">
+    <p style = "text-align: center; width: 50%; margin: 0 auto;">
       Click on view profile to view more information about each Peer Ally and access the ability to email each ally individually.
     </p>
 
@@ -22,7 +20,7 @@
 
   <% @peer_allies.each do |ally| %>
   <% if ally.display || (@current_user && @current_user.administrator) %> <!--Only display profiles are shown unleess admin is logged in, then all profiles displayed-->
-    <div class = "container">
+    <!-- <div class = "container"> -->
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail" style = "background-color: #E8E8E8;">
       <br>
@@ -61,10 +59,7 @@
       </div>
      </div>
     </div>
-    </div>
   <% end %>
 
-<!-- </div> -->
-<!-- </div> -->
 </body>
 
