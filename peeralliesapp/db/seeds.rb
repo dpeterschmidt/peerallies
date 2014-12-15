@@ -21,7 +21,7 @@ PeerAlly.create(name: 'Joshua Nance', bio: "Developer Joshua Nance", ups_id: 'jn
 
 
 #Faculty advisor (also an admin)
-PeerAlly.create(name: 'Marta Palmquist Cady', ups_id: 'mpalmquist', :administrator => true, :display => true)
+PeerAlly.create(name: 'Marta Palmquist Cady', ups_id: 'mpalmquist', :administrator => true, :display => false)
 
 #Allies and Admin
 PeerAlly.create(name: 'Bianca Jarvis', ups_id: 'bjarvis', :administrator => true, :display => true)
