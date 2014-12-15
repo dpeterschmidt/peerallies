@@ -28,7 +28,7 @@
       <!-- Trying to get image to link. Almost there ruby code below. -->
       <!-- link_to image_tag(ally.avatar.url(:thumb), peer_ally_path(ally))  -->
       <img class = "card-heading image">
-        <%= image_tag(ally.avatar.url(:thumb)) %>
+	<%= link_to image_tag(ally.avatar.url(:thumb)), peer_ally_path(ally)  %>
       </img>
 
       <div class="caption">
