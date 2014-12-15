@@ -1,13 +1,16 @@
+<h1>Create A New Ally</h1>
 <div class = "container">
-  <h1>Create A New Ally</h1>
+
   <%= form_for @peer_ally, url: {action: "create"} do |f| %>
   <% if @peer_ally.errors.any? %>
     <!-- Error message -->
     <div id="error_explanation">
+      
       <h2>
         <%= pluralize(@peer_ally.errors.count, "error") %>
         prohibited this Peer Ally from being saved:
       </h2>
+
       <ul>
         <% @peer_ally.errors.full_messages.each do |msg| %>
           <li>
@@ -15,32 +18,44 @@
           </li>
         <% end %>
       </ul>
+
+    </div>
+  <% end %>
+
+  <form role="form">
+    
+    <div class="form-group">
+      <%= f.label :name, 'Name'%>
+      <%= f.text_field :name, class: "form-control", id: "name", placeholder: "Enter Name" %>
     </div>
 
-  <% end %>
+    <br>
 
+    <div>
+      <%= f.label :ups_id, 'UPS Username'%>
+      <%= f.text_field :ups_id, class: "form-control", id: "name", placeholder: "e.g. jsmith" %>
+    </div>
 
-<form role="form">
-    <div class="form-group">
-    <%= f.label :name, 'Name'%>
-    <%= f.text_field :name, class: "form-control", id: "name", placeholder: "Enter Name" %>
-  </div>
-  <div>
-  <%= f.label :ups_id, 'UPS Username'%>
-  <%= f.text_field :ups_id, class: "form-control", id: "name", placeholder: "e.g. jsmith" %></input>
-</div>
-  <div>
-    <%= f.label :administrator, 'Administrator?' %>
-  <%= f.select :administrator, [['No', false], ['Yes', true]] %>
-  </div>
-  <div>
-    <%= f.label :display, 'Would you like this profile to be displayed on the website?' %>
-  <%= f.select :display, [['Yes', true],['No', false]] %>
-  </div>
-  <div>
-  <%= f.submit class: "btn btn-primary" %>
-</div>
-  <!-- </div> -->
+    <br>
 
-  <% end %>
+    <div>
+      <%= f.label :administrator, 'Administrator?' %>
+      <%= f.select :administrator, [['No', false], ['Yes', true]] %>
+    </div>
+
+    <br>
+
+    <div>
+      <%= f.label :display, 'Would you like this profile to be displayed on the website?' %>
+      <%= f.select :display, [['Yes', true],['No', false]] %>
+    </div>
+
+    <br>
+
+    <div>
+      <%= f.submit class: "btn btn-primary" %>
+    </div>
+
+    <% end %>
   </form>
+</div>
