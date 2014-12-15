@@ -23,11 +23,4 @@ class SessionsController < ApplicationController
     redirect_to index_path #where to go to when logged out
   end
 
-  #for testing -- DELETE THIS FOR PRODUCTION
-  def test_login
-    user = PeerAlly.find(params[:user_id])
-    session[:user_id] = user.id
-    redirect_to index_path #where go to when logged in
-  end
-
 end
