@@ -58,6 +58,8 @@ gem "paperclip", "~> 4.2" #for avatar photos
 gem 'bootstrap-sass', "3.1.1.0"
 gem 'autoprefixer-rails'
 
+gem 'redcarpet'
+
 
 
 # To use ActiveModel has_secure_password
