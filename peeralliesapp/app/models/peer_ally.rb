@@ -5,7 +5,7 @@ class PeerAlly < ActiveRecord::Base
 
   validates :name, :ups_id, :presence => true, :uniqueness => true #must have name to display an ally and ups_id for login verification
 
-  has_attached_file :avatar, :styles => {:thumb => "100x100>" }, :default_url => "/images/:style/missing.png" #directory of default image
+  has_attached_file :avatar, :styles => {:thumb => "100x100" }, :default_url => "/images/:style/missing.png" #directory of default image
 
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/ #avatar photos for each ally must by an image
 
