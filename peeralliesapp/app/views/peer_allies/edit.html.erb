@@ -1,47 +1,51 @@
-<body>
-  <div class = "container">
-  <%= form_for @peer_ally, url: {action: "update"} do |f| %>
-    <% if @peer_ally.errors.any? %>
-      <!-- Error message -->
-      <div id="error_explanation">
-        <h2>
-          <%= pluralize(@peer_ally.errors.count, "error") %>
-          prohibited this peer_ally from being saved:
-        </h2>
-        <ul>
-          <% @peer_ally.errors.full_messages.each do |msg| %>
-            <li>
-              <%= msg %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-
-    <% end %>
-    
+<div class = "container">
+<h1>Create New Ally</h1>
+<%= form_for @peer_ally, url: {action: "update"} do |f| %>
+  <% if @peer_ally.errors.any? %>
+    <!-- Error message -->
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@peer_ally.errors.count, "error") %>
+        prohibited this peer_ally from being saved:
+      </h2>
+      
+      <ul>
+        <% @peer_ally.errors.full_messages.each do |msg| %>
+          <li>
+            <%= msg %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
 
 <form role="form">
-    <div class="form-group">
-      <div>
-    <%= f.label :name, 'Name'%>
-    <%= f.text_field :name, class: "form-control", id: "name", placeholder: "Enter Name" %>
+  <div class="form-group">
+      <%= f.label :name, 'Name'%>
+      <%= f.text_field :name, class: "form-control", id: "name", placeholder: "Enter Name" %>
+
+    <br>
+
+      <%= f.label :bio, 'Biography' %>
+      <%= f.text_area :bio, class: "form-control", id:"bio", placeholder: "Biographical Information" %>
+
+    <br>
+
+      <%= f.label :grade, 'Grade' %>
+      <br>
+      <%= f.select :grade, options_for_select(['Freshman', 'Sophomore','Junior', 'Senior'], class: "form-control", id: "grade") %>
+
+    <br>
+
+      <%= f.label :avatar, 'Avatar Photo' %>
+      <%= f.file_field :avatar, class: "form-control", id: "avatar" %>
+
+    <br>
+
+    <%= f.submit class: "btn btn-primary" %>
+  
   </div>
-  <div>
-  <%= f.label :bio, 'Biography' %>
-  <%= f.text_area :bio, class: "form-control", id:"bio", placeholder: "Biographical Information" %>
-  </div>
-  <div>
-    <%= f.label :grade, 'Grade' %>
-    <%= f.select :grade, options_for_select(['Freshman', 'Sophomore','Junior', 'Senior'], class: "form-control", id: "grade") %>
-  </div>
-  <div>
-    <%= f.label :avatar, 'Avatar Photo' %>
-    <%= f.file_field :avatar, class: "form-control", id: "avatar" %>
-  </div>
-  <div>
-  <%= f.submit class: "btn btn-primary" %>
-</div>
-  <!-- </div> -->
   <% end %>
-  </form>
+</form>
 
