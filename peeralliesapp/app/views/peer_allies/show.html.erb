@@ -12,9 +12,11 @@
         <br>
         <br>
 
-        <h1 class="media-heading" style="font-size: 60px">
+        <div class="pname">
           <%= @peer_ally.name %>
-        </h1>
+        </div>
+
+        <%= link_to 'Email me', email_this_ally_path(@peer_ally, :specific_email => (@peer_ally.ups_id.to_s + "@pugetsound.edu"), :specific_name => (@peer_ally.name)), html_options = {:class => "btn btn-primary"}%>
 
         <!-- Line -->
         <hr>
@@ -24,7 +26,6 @@
           <%= @peer_ally.bio %>
         </p>
 
-        <br>
         
         <h2>Grade</h2>
         <p>
@@ -37,21 +38,20 @@
       </div>
     </div> <!-- end of media div -->
     
+    <!-- Edit button -->
     <% if @current_user && (@current_user.name == @peer_ally.name || @current_user.administrator) %>
       <%= link_to 'Edit', edit_peer_ally_path(@peer_ally), html_options = {:class => "btn btn-primary"} %>
     
     <br>
     <br>
     
+    <!-- Delete button -->
     <%= button_to 'Delete', peer_ally_path(@peer_ally),:method => :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" %>
     <% end %>
     
     <br>
-	   <%= link_to 'Email me', email_this_ally_path(@peer_ally, :specific_email => (@peer_ally.ups_id.to_s + "@pugetsound.edu"), :specific_name => (@peer_ally.name)), html_options = {:class => "btn btn-primary"}%>
-		
-    <br>
-    <br>
 
+    <!-- Back to list -->
     <%= link_to 'Back to the list of Peer Allies', ally_list_path, html_options = {:class => "btn btn-primary"} %>
   
   </div>
